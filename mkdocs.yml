@@ -1,6 +1,8 @@
 site_name: CeR Documentation
 theme: 
   name: material  
+  logo: assets/logo.png
+  # favicon: assets/favicon.png
   features:
     - navigation.tabs
     - navigation.sections
@@ -17,8 +19,8 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: teal
-      accent: purple 
+      primary: custom
+      accent: teal   
     - scheme: slate 
       toggle:
         icon: material/toggle-switch

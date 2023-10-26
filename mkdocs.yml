@@ -1,12 +1,18 @@
 site_name: CeR Documentation
 theme: 
   name: material  
-  logo: assets/logo.png
-  # favicon: assets/favicon.png
+  logo: assets/UoALogoWhite.png
+  favicon: assets/favicon.png
   features:
     - navigation.tabs
-    - navigation.sections
-    - toc.integrate
+    - navigation.tabs.sticky # tabs on top won't disappear when scrolling down
+    # - navigation.sections # show all the sections, don't collapse
+    - navigation.tracking
+    - navigation.top # the button showing up when user has scrolled down a lot
+    - navigation.path # this should give breadcrumbs but isn't
+    # - toc.integrate # this takes the ToC from the right and puts it into one structure on the left, not compatible with the following - navigation.indexes
+    - navigation.indexes
+    - toc.follow
     - navigation.top
     - search.suggest
     - search.highlight
@@ -17,19 +23,24 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/theme-light-dark
+        # icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
       primary: custom
-      accent: teal   
+      accent: light blue   
     - scheme: slate 
       toggle:
-        icon: material/toggle-switch
+        icon: material/theme-light-dark
         name: Switch to light mode    
-      primary: teal
-      accent: lime
+      primary: custom
+      accent: light blue
+  font:
+    text: Roboto 
 
 plugins:
   - social
+  - search
+  - mermaid2
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -44,9 +55,20 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.keys
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+        # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+extra_css:
+    - stylesheets/extras.css
 
 copyright: |
   &copy; 2023 <a href="https://eresearch.auckland.ac.nz/"  target="_blank" rel="noopener">UoA CeR</a>

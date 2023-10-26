@@ -1,4 +1,4 @@
-# Research Visualisation
+# Research Visualisation Booking
 
 ## How to borrow equipment
 

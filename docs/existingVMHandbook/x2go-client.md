@@ -13,15 +13,15 @@ Please follow [this article](https://wiki.x2go.org/doku.php/doc:installation:x2g
 
 After starting the X2GO client, first create a new session:
 
-![useful image]({{ "/assets" | append: page.id | append: "/x2go_screenshot1.png" | absolute_url }}){:width="600px"}
+![useful image](../assets/doc/x2go-client/x2go_screenshot1.png){:width="600px"}
 
 On the session tab, give your session a meaningful name and write the name of the VM into the "Host" field and your user name into the "Login" field. Make sure you choose MATE from the "Session type" selection menu.
 
-![useful image]({{ "/assets" | append: page.id | append: "/x2go_screenshot2.png" | absolute_url }}){:width="600px"}
+![useful image](../assets/doc/x2go-client/x2go_screenshot2.png){:width="600px"}
 
 On the Media tab, please disable "Sound" and "Client side printing support:
 
-![useful image]({{ "/assets" | append: page.id | append: "/x2go_screenshot3.png" | absolute_url }}){:width="600px"}
+![useful image](../assets/doc/x2go-client/x2go_screenshot3.png){:width="600px"}
 
 Then click Ok. The new session will then show up on the right side of your X2GO client window.
 

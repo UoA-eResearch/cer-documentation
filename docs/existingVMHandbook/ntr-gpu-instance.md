@@ -14,11 +14,11 @@ Before you can launch a GPU instance, you must reserve a GPU first. Login to thi
 
 , and you'll see the current availability of all GPUs.
 
-![useful image]({{ "/assets" | append: page.id | append: "/reservation.png" | absolute_url }}){:width="60%"}
+![useful image](../assets/doc/ntr-gpu-instance/reservation.png){:width="60%"}
 
 Follow the instructions to reserve your GPU instance. If your reservation is successful, you'll receive an email, like this one:  
 
-![useful image]({{ "/assets" | append: page.id | append: "/email.png" | absolute_url }}){:width="60%"}
+![useful image](../assets/doc/ntr-gpu-instance/email.png){:width="60%"}
 
 You can follow the link inside the email to read the instructions on how to launch a GPU instance. 
 
@@ -26,7 +26,7 @@ You can follow the link inside the email to read the instructions on how to laun
 
 We your reservation is approaching to the end date (normally 2 weeks before), you'll receive another email asking you to renew. You can follow the instructions to renew your reservation, if nobody has reserved your GPU. You won't be able to see the renew button until you receive the email. That is, you can not renew your reservation in advance.
 
-![useful image]({{ "/assets" | append: page.id | append: "/email2.png" | absolute_url }}){:width="60%"}
+![useful image](../assets/doc/ntr-gpu-instance/email2.png){:width="60%"}
 
 
 ## GPU reservation v.s. Nectar allocation
@@ -47,17 +47,17 @@ The nectar project allocation lifecycle is managed via the [Nectar dashboard](ht
 
 Login to [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) via Tuakiri. Browse to *Project > Compute > Images* as shown in the picture below, and enter `UoA-GPU` in the search box. You will find the prebuilt images for GPU instances. The image is built upon Ubuntu 18.04 and has lots of useful tools pre-installed, such as the NVIDIA drivers, CUDA, Anaconda, and TensorFlow. If you have an approved GPU project and can not find an image, please contact us.
 
-![useful image]({{ "/assets" | append: page.id | append: "/step1-image.png" | absolute_url }}){:width="60%"}
+![useful image](../assets/doc/ntr-gpu-instance/step1-image.png){:width="60%"}
 
 If there are multiple images, please always choose the latest one, and click the "Launch" button to start the new instance wizard.
 
 In the *Details* tab, please select `auckland` from the *Availability Zone* dropdown box.
 
-![useful image]({{ "/assets" | append: page.id | append: "/step2-az.png" | absolute_url }}){:width="60%"}
+![useful image](../assets/doc/ntr-gpu-instance/step2-az.png){:width="60%"}
 
 In the *Flavour* tab, please enter `akl.gpu` in the filter box, and select the corresponding GPU flavour that your project has been granted to.
 
-![useful image]({{ "/assets" | append: page.id | append: "/step3-flavour.png" | absolute_url }}){:width="60%"}
+![useful image](../assets/doc/ntr-gpu-instance/step3-flavour.png){:width="60%"}
 
 In the *Security Groups* tab, please make sure you've enabled SSH (port 22) ingress. 
 
@@ -94,7 +94,7 @@ In x2go client, create a new session, and make sure the following items are corr
 - **Use RSA/DSA key for ssh connection**: enter the path of your private key.
 - **Session type**: select `MATE` from the dropdown menu.
 
-![useful image]({{ "/assets" | append: page.id | append: "/step4-x2go.png" | absolute_url }}){:width="50%"}
+![useful image](../assets/doc/ntr-gpu-instance/step4-x2go.png){:width="50%"}
 
 Then, connect with the new session, you should be able to see the graphical user interface of you GPU VM.
 

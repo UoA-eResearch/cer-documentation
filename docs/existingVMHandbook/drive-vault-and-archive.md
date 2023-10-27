@@ -5,7 +5,7 @@ categories: howto drive
 
 Your research drive comes with two folders especially for data that is only occasionally accessed, the `vault` and `archive` folders.
 
-![useful image]({{ "/assets" | append: page.id | append: "/archive-vault.png" | absolute_url }}){:width="600px"}
+![useful image](../assets/doc/drive-vault-and-archive/archive-vault.png){:width="600px"}
 
 ### Vault
 Access is slightly slower than your normal disk storage, ideal for data that you have finished working on but would like to come back to every few months.
@@ -33,5 +33,5 @@ If you cut and paste a file out of vault/archive, it will remain on slower stora
 **Files have a cross on the icon (Windows only)**  
 This indicates that a file is on slower storage.
 
-![useful image]({{ "/assets" | append: page.id | append: "/archived_files.png" | absolute_url }}){:width="600px"}
+![useful image](../assets/doc/drive-vault-and-archive/archived_files.png){:width="600px"}
 

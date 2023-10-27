@@ -48,7 +48,7 @@ the two endpoints you want to connect:
 * For your research drive:  enter "Auckland" in the Collection Search bar, and select `Auckland Research Data DTN`.
 Authenticate, and your research drive will be visible.
 * For your nectar vm: under the "Your Collections" tab, select the personal globus endpoint on your nectar vm.
- ![personal-endpoint]({{ "/assets" | append: page.id | append: "/select_personal_connect.png" | absolute_url }}){:width="650px"}
+ ![personal-endpoint](../assets/doc/ntr-drive/select_personal_connect.png){:width="650px"}
  ![](../assets/doc/ntr-drive/drive_nectar.png){:width="650px"}
 4. Navigate to the location of your source and target directories, and proceed to transfer files.
 

@@ -18,11 +18,11 @@ In Site Manager dialog of FileZilla, create a new site and fill in the following
 - **Password**: leave it blank
 
 ![useful image](../assets/doc/copy-file-linux/filezilla.png){:width="600px"}
-<!-- ![useful image]({{ "/assets" | append: page.id | append: "/filezilla.png" | absolute_url }}){:width="600px"} -->
+<!-- ![useful image](../assets/doc/copy-file-linux/filezilla.png){:width="600px"} -->
 
 After clicking **Connect** button, enter password dialog will popup. In this dialog, uncheck the **Remember password until FileZilla is closed** checkbox, and enter the same password as [SSH login]({{ site.baseurl }}{% link _doc/ssh-client.md %}).
 
-![useful image]({{ "/assets" | append: page.id | append: "/filezilla2.png" | absolute_url }}){:width="300px"}
+![useful image](../assets/doc/copy-file-linux/filezilla2.png){:width="300px"}
 
 ## Copy files with SCP
 

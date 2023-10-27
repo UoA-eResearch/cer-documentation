@@ -18,13 +18,13 @@ If you prefer video tutorials, you can refer to [Nectar On-board Tutorial Videos
 
 Login to [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) via Tuakiri. Browse to *Project > Compute > Images* as shown in the picture below, and enter `UoA-Server` in the search box. You will find the prebuilt images for Windows instances.
 
-![useful image]({{ "/assets" | append: page.id | append: "/step1-image.png" | absolute_url }}){:width="60%"}
+![useful image](../assets/doc/ntr-windows/step1-image.png){:width="60%"}
 
 If there are multiple images, please always choose the latest one, and click the "Launch" button to start the new instance wizard.
 
 In the *Details* tab, please select `auckland` from the *Availability Zone* dropdown box.
 
-![useful image]({{ "/assets" | append: page.id | append: "/step2-az.png" | absolute_url }}){:width="60%"}
+![useful image](../assets/doc/ntr-windows/step2-az.png){:width="60%"}
 
 In the *Security Groups* tab, please make sure you've enabled Remote Desktop Protocol (RDP, port 3389) ingress. 
 
@@ -43,11 +43,11 @@ Before you can use the Windows VM, you need to set a password for the administra
 
 Browse to *Project > Compute > Instances* panel, and click on your instance. In the instance detail page, click *Console* tab. You'll see a welcome screen like this:
 
-![step3]({{ "/assets" | append: page.id | append: "/step3-init.png" | absolute_url }}){:width="60%"}
+![step3](../assets/doc/ntr-windows/step3-init.png){:width="60%"}
 
 Click "Next" and it will ask you to enter the password for administrator. When administrator's password is set, you can try to login as administrator by clicking the *Send CtrlAltDel* button on the top right corner.
 
-![step4]({{ "/assets" | append: page.id | append: "/step4-login.png" | absolute_url }}){:width="60%"}
+![step4](../assets/doc/ntr-windows/step4-login.png){:width="60%"}
 
 ## Remote login via Remote Desktop
 
@@ -57,11 +57,11 @@ For Windows desktop, **Microsoft Remote Desktop** is built-in. For macOS users, 
 
 You need to find the IP address of your VM to connect to, and it can be found via the instance detail page, as follows:
 
-![step5]({{ "/assets" | append: page.id | append: "/step5-ip.png" | absolute_url }}){:width="60%"}
+![step5](../assets/doc/ntr-windows/step5-ip.png){:width="60%"}
 
 Open **Microsoft Remote Desktop** application, create a new connection, and in the dialogue box, enter your VM's IP address as "PC name".
 
-![step5]({{ "/assets" | append: page.id | append: "/step6-rdp.png" | absolute_url }}){:width="50%"}
+![step5](../assets/doc/ntr-windows/step6-rdp.png){:width="50%"}
 
 Connect to your VM, and login with the administrator's credential, you should be able to see the Windows desktop.
 

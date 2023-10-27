@@ -16,7 +16,7 @@ To access the above resources from off campus:
 #### Connecting to the VPN
 Guides detailing how to install FortiClient and connect to the VPN:
 
-* [FortiClient guide]({{ "/assets" | append: page.id | append: "/how-to-guide-for-forticlient-vpn.pdf" | absolute_url }})
+* [FortiClient guide](../assets/doc/drive-off-campus/how-to-guide-for-forticlient-vpn.pdf)
 * [Windows Video Guide ]( https://youtu.be/xRTBHlLycm4)
 * [Video Guide ]( https://youtu.be/tYSyPi9hM5Y)
   

@@ -11,7 +11,7 @@ For security reasons Windows VMs by default don't have access to the Internet. T
 4. In the **Port** box, type `3128`.
 5. You can click to select the **Don't use the proxy server for local addresses** check box if you do not want the proxy server computer to be used when you connect to a computer on the local network (this may speed up performance). If you need to bypass the proxy server for other connections, click on **Advanced** where you configured the proxy server and add the address to the list of **Exceptions**.
 
-![useful image]({{ "/assets" | append: page.id | append: "/proxy_configuration_windows.png" | absolute_url }}){:width="1024"}
+![useful image](../assets/doc/ie-proxy/proxy_configuration_windows.png){:width="1024"}
 
 
 Note:
@@ -24,9 +24,9 @@ Note:
 The above method should work for most software (including web browsers). However, if you find that some software still does not have internet access, you may try the following:
 1. Search for **cmd** in the Windows Search, which should make **Command Prompt** visible in the search results (don't open Command Prompt yet).
 2. Right-click on **Command Prompt** and click **Run as administrator**.  
-![useful image]({{ "/assets" | append: page.id | append: "/cmd_admin_cropped.png" | absolute_url }}){:width="512"}
+![useful image](../assets/doc/ie-proxy/cmd_admin_cropped.png){:width="512"}
 3. In command prompt, type `netsh winhttp set proxy http://squid.auckland.ac.nz:3128`, and press enter
-![useful image]({{ "/assets" | append: page.id | append: "/cmd_netsh.png" | absolute_url }}){:width="1024"}
+![useful image](../assets/doc/ie-proxy/cmd_netsh.png){:width="1024"}
 
 Note:
 - You can only run this command if you are an admin on the VM.

@@ -53,6 +53,8 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.mark
   - attr_list
   - toc:
@@ -72,3 +74,6 @@ extra_css:
 
 copyright: |
   &copy; 2023 <a href="https://eresearch.auckland.ac.nz/"  target="_blank" rel="noopener">UoA CeR</a>
+
+  
+  

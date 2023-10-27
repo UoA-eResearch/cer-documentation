@@ -1,21 +1,74 @@
-# to consider
+# Sandbox
+
+## Underlying theory
+
+- TODO: Put Noel's link to the 4 types of documentation here
+
+### How to structure the documentation
+
+- TODO: Mostly captured in the Excel file, put it here
+
+### Thoughts
+
+- Abstract topics go on the Research Hub, this is for
+  - how-to-guides
+  - trouble-shooting (in case we consider them a separate category)
+
+### Theory of the VM Handbook
+
+![alt](existingVMHandbook/assets/categories.png)
+
 
 - how do I link to the same md file several times?
   - embed?
   - do I have to put the mkdocs nav thing? If so: How much manual effort does that require? Isn't there a plugin/automation
 
+# Why MKDocs Material is cool:
 
-HOW DO the creators (materials), do it for their documentation. I like the broad topics on the left, the details of each md on the right
-https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml#L39
-https://squidfunk.github.io/mkdocs-material/reference/
-https://squidfunk.github.io/mkdocs-material/customization/#extending-the-theme
-
-- [multiple docs sub-folders](https://github.com/backstage/mkdocs-monorepo-plugin) being automatically collated into one repo
 - [language switcher planned misuse for win/osx/linux?](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector)
 
-# test 
 
-this is to show some of the cool features of MKDocs
+## we can get tabs
+
+=== "C"
+
+    ``` c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
+
+=== "C++"
+
+    ``` c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
+## Admonitions aka Call-Outs
+
+!!! note "This is my title of the note"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+??? tip "These can also be collapsible"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+
+### Types to select from
+
+[Types](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types)
 
 For a lot of how-to-guides, you need to let users know what keys to press.
 There is the `<kbd>` tag, but by including `pymdownx.keys` we can make our lives easier:

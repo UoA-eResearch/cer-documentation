@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.340">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>index</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="documentation-architecture" class="level1">
+<h1>Documentation Architecture</h1>
+<section id="the-existing-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="the-existing-documentation">The existing Documentation</h2>
+<ul>
+<li><ol type="A">
+<li>CeR Website | External-facing | Mainly containts Service Description | and Annual Report, Our People</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Research Hub | Researcher-facing | Mainly contains abstract Service Description | Goal was: Actionable (create a ticket, consultation, etc.)</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Nuclino | Internal-/ staff-facing | Mainly contains how-to-guides (for BAU and/or onboarding) | Goal was: Actionable (create a ticket, consultation, etc.)</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>MSTeams/Sharepoint | Internal-/ staff-facing | Mainly contains presentations, HR instructions | Goal was: Actionable (create a ticket, consultation, etc.)</li>
+</ol></li>
+<li><ol start="5" type="A">
+<li>VM-Handbook/CeRServides Handbook | Internal-/ staff-facing | Mainly contains presentations, HR instructions | Goal was: Actionable (create a ticket, consultation, etc.)</li>
+</ol></li>
+</ul>
+</section>
+<section id="design-and-content-principles" class="level2">
+<h2 class="anchored" data-anchor-id="design-and-content-principles">Design and Content Principles</h2>
+<p>Before we dive into the technical details, we need to define some principles that will guide our work:</p>
+<ul>
+<li><strong>DRY</strong> principle shall be followed as much as possible; cost-benefit trade-offs migh be necessary, in principle, changes in one place shall propagate everywhere else, ideally with no manual interaction</li>
+<li><strong>a consistent look and feel</strong> shall be achieved</li>
+<li>ideally, design-aspects are inherited by several ‘outlets’
+<ul>
+<li><strong>cer-documentation</strong>: researcher-facing, mostly detailed how-to-guides, with a very clear target-audience
+<ul>
+<li><strong>IDS-documentation</strong>: might be a sub-section? researcher-facing, mostly detailed how-to-guides, with a very clear target-audience</li>
+<li><strong>IDS-reference</strong>: developer-facing, a docstring-based autogenerated reference material</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="game-plan" class="level2">
+<h2 class="anchored" data-anchor-id="game-plan">Game Plan</h2>
+<ul>
+<li>Scan what documentation we have, remove/adjust/add if gap is identified</li>
+<li>what do we have/want</li>
+<li>who is responsible for
+<ul>
+<li>creating/updating content</li>
+<li>approving</li>
+</ul></li>
+</ul>
+<p>LINK TO THE EXCEL SHEET - add one template for emails that needs to update and then be fed into the CLI <code>eres drive allocation notice   project_groups.json</code></p>
+<pre class="mermaid"><code>flowchart TD
+    A[Wesbite]
+    B[ResHub] --&gt;|links to| F[cer-docs]
+    C[Nuclino] --&gt; X[Wiki]
+    C --&gt; E[???]
+    C --&gt;|e.g. HR tuts.| D[MSTeams]
+    E[VMHandbook] --&gt; F  </code></pre>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<ul>
+<li>how to handle the structure</li>
+<li>how to make design inheritable across GHRepos</li>
+<li>how to have collapsible boxes</li>
+<li>where to store video? Youtube vs.&nbsp;x</li>
+<li>where to store training material
+<ul>
+<li>DReSA</li>
+<li>Figshare</li>
+<li>Panopto</li>
+<li></li>
+</ul></li>
+</ul>
+</section>
+<section id="underlying-theory" class="level2">
+<h2 class="anchored" data-anchor-id="underlying-theory">Underlying theory</h2>
+<ul>
+<li>TODO: Put Noel’s link to the 4 types of documentation here</li>
+</ul>
+<section id="how-to-structure-the-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-structure-the-documentation">How to structure the documentation</h3>
+<ul>
+<li>TODO: Mostly captured in the Excel file, put it here</li>
+</ul>
+</section>
+<section id="thoughts" class="level3">
+<h3 class="anchored" data-anchor-id="thoughts">Thoughts</h3>
+<ul>
+<li>Abstract topics go on the Research Hub, this is for
+<ul>
+<li>how-to-guides</li>
+<li>trouble-shooting (in case we consider them a separate category)</li>
+</ul></li>
+</ul>
+</section>
+<section id="theory-of-the-vm-handbook" class="level3">
+<h3 class="anchored" data-anchor-id="theory-of-the-vm-handbook">Theory of the VM Handbook</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="existingVMHandbook/assets/categories.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">alt</figcaption>
+</figure>
+</div>
+<ul>
+<li>how do I link to the same md file several times?
+<ul>
+<li>embed?</li>
+<li>do I have to put the mkdocs nav thing? If so: How much manual effort does that require? Isn’t there a plugin/automation</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="why-mkdocs-material-is-cool" class="level1">
+<h1>Why MKDocs Material is cool:</h1>
+<ul>
+<li><a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector">language switcher planned misuse for win/osx/linux?</a></li>
+</ul>
+<section id="we-can-get-tabs" class="level2">
+<h2 class="anchored" data-anchor-id="we-can-get-tabs">we can get tabs</h2>
+<p>=== “C”</p>
+<pre><code>``` c
+#include &lt;stdio.h&gt;
+
+int main(void) {
+  printf("Hello world!\n");
+  return 0;
+}
+```</code></pre>
+<p>=== “C++”</p>
+<pre><code>``` c++
+#include &lt;iostream&gt;
+
+int main(void) {
+  std::cout &lt;&lt; "Hello world!" &lt;&lt; std::endl;
+  return 0;
+}
+```</code></pre>
+</section>
+<section id="admonitions-aka-call-outs" class="level2">
+<h2 class="anchored" data-anchor-id="admonitions-aka-call-outs">Admonitions aka Call-Outs</h2>
+<p>!!! note “This is my title of the note”</p>
+<pre><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</code></pre>
+<p>??? tip “These can also be collapsible”</p>
+<pre><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.</code></pre>
+<section id="types-to-select-from" class="level3">
+<h3 class="anchored" data-anchor-id="types-to-select-from">Types to select from</h3>
+<p><a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types">Types</a></p>
+<p>For a lot of how-to-guides, you need to let users know what keys to press. There is the <code>&lt;kbd&gt;</code> tag, but by including <code>pymdownx.keys</code> we can make our lives easier: Some examples, fenced by the <code>++</code> characters:</p>
+<ul>
+<li><p>++ctrl+alt+delete++</p></li>
+<li><p>++cmd+fn+delete++</p></li>
+<li><p>++lbutton++</p></li>
+<li><p>++mbutton++</p></li>
+<li><p>++rbutton++</p></li>
+<li><p>++arrow-up++</p></li>
+<li><p>++arrow-down++</p></li>
+<li><p>++arrow-left++</p></li>
+<li><p>++arrow-right++</p></li>
+<li><p>++page-up++</p></li>
+<li><p>++page-down++</p></li>
+<li><p>++home++</p></li>
+<li><p>++end++</p></li>
+<li><p>++tab++</p></li>
+</ul>
+</section>
+</section>
+<section id="test-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="test-graphs">test graphs</h2>
+<p>TODO: get a better exmaple that is more applied to our context</p>
+<pre class="mermaid"><code>graph LR
+    hello --&gt; world
+    world --&gt; again
+    again --&gt; hello</code></pre>
+</section>
+<section id="code-annotation-examples" class="level2">
+<h2 class="anchored" data-anchor-id="code-annotation-examples">Code Annotation Examples</h2>
+<section id="codeblocks" class="level3">
+<h3 class="anchored" data-anchor-id="codeblocks">Codeblocks</h3>
+<p>Some <code>code</code> goes here.</p>
+</section>
+<section id="plain-codeblock" class="level3">
+<h3 class="anchored" data-anchor-id="plain-codeblock">Plain codeblock</h3>
+<p>A plain codeblock:</p>
+<pre><code>Some code here
+def myfunction()
+// some comment</code></pre>
+<section id="code-for-a-specific-language" class="level4">
+<h4 class="anchored" data-anchor-id="code-for-a-specific-language">Code for a specific language</h4>
+<p>Some more code with the <code>py</code> at the start:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode py code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> whatever()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="with-a-title" class="level4">
+<h4 class="anchored" data-anchor-id="with-a-title">With a title</h4>
+<p><code>py title="bubble_sort.py" def bubble_sort(items):     for i in range(len(items)):         for j in range(len(items) - 1 - i):             if items[j] &gt; items[j + 1]:                 items[j], items[j + 1] = items[j + 1], items[j]</code></p>
+</section>
+<section id="with-line-numbers" class="level4">
+<h4 class="anchored" data-anchor-id="with-line-numbers">With line numbers</h4>
+<p><code>py linenums="1" def bubble_sort(items):     for i in range(len(items)):         for j in range(len(items) - 1 - i):             if items[j] &gt; items[j + 1]:                 items[j], items[j + 1] = items[j + 1], items[j]</code></p>
+</section>
+<section id="highlighting-lines" class="level4">
+<h4 class="anchored" data-anchor-id="highlighting-lines">Highlighting lines</h4>
+<p><code>py hl_lines="2 3" def bubble_sort(items):     for i in range(len(items)):         for j in range(len(items) - 1 - i):             if items[j] &gt; items[j + 1]:                 items[j], items[j + 1] = items[j + 1], items[j]</code></p>
+</section>
+</section>
+</section>
+<section id="icons-and-emojs" class="level2">
+<h2 class="anchored" data-anchor-id="icons-and-emojs">Icons and Emojs</h2>
+<p>:smile:</p>
+<p>:fontawesome-regular-face-laugh-wink:</p>
+<p>:fontawesome-brands-twitter:{ .twitter }</p>
+<p>:octicons-heart-fill-24:{ .heart }</p>
+</section>
+</section>
+<section id="icons-to-use" class="level1">
+<h1>Icons to use</h1>
+<ul>
+<li>MKDocs comes with a lot of icons</li>
+<li>they are in the theme folder `…/venv/lib/python3.11/site-packages/material/templates/.icons/</li>
+<li>an efficient way to find the icon you want is to check <a href="https://pictogrammers.com/library/mdi/">this website</a></li>
+<li>to use them, you need to adapt the syntax a bit:
+<ul>
+<li>for example: you would find</li>
+<li><code>yaml hl_lines="3" switch.my_switch: friendly_name: My Switch icon: mdi:account-arrow-down-outline</code></li>
+<li>and you will use the following part of the last line: <code>account-arrow-down-outline</code>, this gets the prefix <code>material-</code> and is fenced by the <code>:</code> character before and after. So you write this code <code>:material-account-arrow-down-outline:</code></li>
+<li>to get this icon :material-account-arrow-down-outline:</li>
+</ul></li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

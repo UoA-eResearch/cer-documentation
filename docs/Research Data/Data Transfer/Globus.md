@@ -1,5 +1,9 @@
 # Globus
 
+We want to adapt the [efforts at Stanford](https://globus.stanford.edu/)
+
+And [NeSI](https://support.nesi.org.nz/hc/en-gb/sections/360000040596-Data-Transfer-Services)
+
 ## Clarify
 
 - There is the server-verion: *Globus* and the client-version: *Globus Connect Personal* (GCP) that can be installed on every device
@@ -21,4 +25,3 @@
 - https://streamable.com/ is mentioned as a common alternative
 - not sure if Dropbox would work
 <iframe src="https://drive.google.com/file/d/1Xb3o7PDF8VIIfwvSRv9eSu1hFvuC61dX/view?usp=drive_link" allowfullscreen></iframe>
-

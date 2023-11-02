@@ -41,6 +41,8 @@ plugins:
   - social
   - search
   - mermaid2
+  # - projects
+  - macros
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -71,6 +73,14 @@ markdown_extensions:
           format: !!python/name:mermaid2.fence_mermaid_custom
 extra_css:
     - stylesheets/extras.css
+
+extra:
+    name_variable: John Doe
+    service_name: Instrument Data Service
+    institution_name: Waipapa Taumata Rau The University of Auckland
+    service_contact: "[Chris Seal](mailto:c.seal@auckland.ac.nz)"
+    bongo: bingo
+
 
 copyright: |
   &copy; 2023 <a href="https://eresearch.auckland.ac.nz/"  target="_blank" rel="noopener">UoA CeR</a>

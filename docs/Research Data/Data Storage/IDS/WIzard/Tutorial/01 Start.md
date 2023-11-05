@@ -3,22 +3,24 @@
 Welcome! This tutorial will help you annotate a dataset using the
 Instrument Data Wizard, in preparation for ingestion into {{ service_name }}
 
-This tutorial will follow a fictional scenario. You are Sarah, a PhD
-student collecting data for your cancer genomics research, and you would
-like to store that data in your University's instrument data
-repository.
+!!! example
+    This tutorial will follow a fictional scenario. You are Sarah :material-account-box:, a PhD
+    student collecting data for your cancer genomics research, and you would
+    like to store that data in your University's instrument data
+    repository.
 
 
 !!! info
     What is Instrument Data Wizard?
 
     If you're not familiar with what {{ service_name }} and Instrument Data
-    Wizard do, and how they work together, check out PUT THE LINK TO NOELS ONE LEVEL ABOVE DESCRIPTION HERE first.
+    Wizard do, and how they work together, check out first.
 
+!!! bug
+    PUT THE LINK TO NOELS ONE LEVEL ABOVE DESCRIPTION HERE
 
-
-
-TODO: Table of contents here?
+!!! bug
+    TODO: Table of contents here?
 
 By the end of this tutorial, you will learn about the Instrument Data
 Wizard and {{ service_name }}, and how to:
@@ -42,5 +44,4 @@ Contact {{ service_contact }} if you need assistance getting set up on
 {{ service_name }}.
 
 Ready? Let's begin!
-
 

@@ -7,7 +7,7 @@ Before we start using the Instrument Data Wizard, it's good to plan out and docu
 
 At its heart, {{ service_name }} is a database. Data are organised in a hierarchical structure, like folders and subfolders. There are three levels. You need to decide how to structure your data to fit in with this hierarchy.
 
-<!-- ![image](../../assets/OnionModel.svg){width=300px} -->
+![image](../../assets/OnionModel.svg){width=300px}
 
 
 * Data files are grouped into `Datasets`.
@@ -21,6 +21,8 @@ At each level of the hierarchy and at the individual file level, there are manda
 # Things to consider
 
 Here are some things to consider when deciding how your data should fit into this hierarchy:
+
+![image](../../assets/OnionModel2.svg){height=300px}
 
 * Usually, there should be one `Project` that corresponds to the research project or unit of research activity that you are collecting data for.
 * Use `Experiments` to represent a study sample or variable you are studying. Store properties about the sample as metadata in each `Experiment` .
@@ -54,6 +56,40 @@ After a discussion with your collaborators, you have created this data structure
  - **Datasets** - In each Experiment, there would be two `Datasets`: one for raw `.fastq` files named “Raw” with ID “[Treatment ID]-Raw”, and another for aligned `.bam` files named “Aligned” with ID “[Treatment ID]-Aligned”.
  - **Datafiles** - Under each Dataset, there would be five files, one file from each tissue sample.
  - Clinical details and sequencing instrument configurations will be recorded as metadata at the Dataset level.
+
+``` 
+Project: “Breast Cancer Drug Treatment Genomics” - ID “BREAST04”/
+├─ Experiments: (One experiment per treatment)/
+│  ├─ “No treatment” with ID “NoTreatment”/
+│  │  ├─ Datasets/
+│  │  │  ├─ RAW (for raw .fastq files) with ID “[Treatment ID]-Raw"/
+│  │  │  │  ├─ File 1
+│  │  │  │  ├─ File 2
+│  │  │  │  ├─ File 3
+│  │  │  │  ├─ File 4
+│  │  │  │  ├─ File 5
+│  │  │  ├─ Aligned for aligned .bam files with ID “[Treatment ID]-Aligned”
+│  │  │  │  ├─ File 1
+│  │  │  │  ├─ ...
+│  ├─ "Keytruda" (with ID “Keytruda”)/
+│  │  ├─ Datasets/
+│  │  │  ├─ RAW (for raw .fastq files) with ID “[Treatment ID]-Raw"/
+│  │  │  │  ├─ File 1
+│  │  │  │  ├─ ...
+│  │  │  ├─ Aligned for aligned .bam files with ID “[Treatment ID]-Aligned”
+│  │  │  │  ├─ File 1
+│  │  │  │  ├─ ...
+│  ├─ “Herceptin” with ID “Herceptin”/
+│  │  ├─ Datasets/
+│  │  │  ├─ RAW (for raw .fastq files) with ID “[Treatment ID]-Raw"/
+│  │  │  │  ├─ File 1
+│  │  │  │  ├─ ...
+│  │  │  ├─ Aligned for aligned .bam files with ID “[Treatment ID]-Aligned”
+│  │  │  │  ├─ File 1
+│  │  │  │  ├─ ...
+
+(Clinical details and sequencing instrument configuration)
+```
 
 # Exercise: How does your own data fit into this hierarchy?
 

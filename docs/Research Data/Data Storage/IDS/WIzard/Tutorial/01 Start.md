@@ -1,7 +1,7 @@
 # Tutorial: Annotating your first dataset
 
 Welcome! This tutorial will help you annotate a dataset using the
-Instrument Data Wizard, in preparation for ingestion into {{ service_name }}
+Instrument Data Wizard, in preparation for ingestion into {{ service_name }}.
 
 !!! example
     This tutorial will follow a fictional scenario. You are Sarah :material-account-box:, a PhD
@@ -36,6 +36,8 @@ Wizard and {{ service_name }}, and how to:
 Instrument Data Wizard, download the tutorial data, and unzip it on your
 desktop. This data will be used in the rest of the tutorial.
 
+!!! bug
+    put a link to the download of the executables 
 
 [:material-folder-download: Download the tutorial-data.zip file here](../../assets/tutorial-data.zip)
 

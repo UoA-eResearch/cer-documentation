@@ -24,7 +24,7 @@ Note:
 The above method should work for most software (including web browsers). However, if you find that some software still does not have internet access, you may try the following:
 1. Search for **cmd** in the Windows Search, which should make **Command Prompt** visible in the search results (don't open Command Prompt yet).
 2. Right-click on **Command Prompt** and click **Run as administrator**.  
-![useful image](../assets/doc/ie-proxy/cmd_admin_cropped.png){:width="512"}
+![useful image](../assets/doc/ie-proxy/cmd_admin_cropped.png){width="512px" align=right}
 3. In command prompt, type `netsh winhttp set proxy http://squid.auckland.ac.nz:3128`, and press enter
 ![useful image](../assets/doc/ie-proxy/cmd_netsh.png){:width="1024"}
 

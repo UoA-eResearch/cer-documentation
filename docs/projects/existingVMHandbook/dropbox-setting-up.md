@@ -10,6 +10,7 @@ If you don’t already have a Dropbox account using your work email address, res
 If you already have a Dropbox account using your work email address, please change the email on your other account to another address and then proceed as above. For more info, see [Dropbox's instructions on changing your email address](help.dropbox.com/accounts-billing/settings-sign-in/change-email for details).
 
 Other steps you wish to take may include:
-- [Connecting your personal and work accounts]({{ site.baseurl }}{% link _doc/dropbox-connect-accounts.md %})
-- [Sharing files or adding other members to your dropbox folder]({{ site.baseurl }}{% link _doc/dropbox-add-member.md %})
+
+- [Connecting your personal and work accounts](./dropbox-connect-accounts.md)
+- [Sharing files or adding other members to your dropbox folder](./dropbox-add-member.md)
 

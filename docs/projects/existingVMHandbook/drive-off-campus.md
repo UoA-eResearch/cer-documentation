@@ -21,20 +21,22 @@ Guides detailing how to install FortiClient and connect to the VPN:
 * [Video Guide ]( https://youtu.be/tYSyPi9hM5Y)
   
 Once you have successfully connected to the UoA VPN, you can refer to the below links for instructions on accessing network drives and VMs.
+
 #### Mapping your research drive
 
 * Mac:
-    - [Text Guide]({{ site.baseurl }}{% link _doc/map-drive-mac.md %})
+    - [Text Guide](./map-drive-mac.md)
     - [Video Guide]( https://youtu.be/1TF_5Ejpmv4)
+
 * Windows:
-    - [Text Guide]({{ site.baseurl }}{% link _doc/map-drive-windows.md %})
+    - [Text Guide](/.map-drive-windows.md)
     - [Video guide]( https://youtu.be/HNlL4UCZcIs)
 
 #### Connecting to your VM
 
-* [Connecting to Windows Research VMs]({{ site.baseurl }}{% link _doc/remote-desktop.md %})
+* [Connecting to Windows Research VMs](./remote-desktop.md)
 * Connecting to Linux Research VMs
-    - [command line session via SSH]({{ site.baseurl }}{% link _doc/ssh-client.md %})
-    - [graphical session via x2go]({{ site.baseurl }}{% link _doc/x2go-client.md %})
-    - [graphical session via remote desktop client]({{ site.baseurl }}{% link _doc/linux-rdp-client.md %})
-* [Connecting to Nectar Windows VMs]({{ site.baseurl }}{% link _doc/ntr-windows.md %})
+    - [command line session via SSH](./ssh-client.md)
+    - [graphical session via x2go](./x2go-client.md)
+    - [graphical session via remote desktop client](./linux-rdp-client.md)
+* [Connecting to Nectar Windows VMs](./ntr-windows.md)

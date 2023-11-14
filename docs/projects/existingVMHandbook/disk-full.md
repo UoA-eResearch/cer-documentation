@@ -4,16 +4,14 @@ categories: windows linux admin user tshoot nectar
 ---
 
 
-
-  -  [ Move docker from system drive](#move-docker-from-system-drive)
-  -  [ Move anaconda from system drive](#move-anaconda-from-system-drive)
+[TOC]
 
 We keep the system drive small to encourage you to work on your external drive.
 Keeping system files on a different drive than your data is good practice:  your
 data is kept safe from system failures, and system re-installation is simple.
 
 If your system drive is getting full, please start by moving any research data and
-environments to your external data volumme.
+environments to your external data volume.
 If you are running docker or anaconda, you are strongly encouraged to move them to your external volume, as outlined below.
 
 

@@ -4,8 +4,7 @@ categories: howto drive linux admin
 ---
 
 # Contents
-  - [Persistent Research Drive Mount](#persistent-research-drive-mount)
-  - [Shared Research Drive Access](#shared-research-drive-access)
+[TOC]
 
 ## Persistent Research Drive Mount
 
@@ -53,7 +52,8 @@ Unmount the research drive in order to test the fstab configuration:
 ```bash
 sudo mount -av
 ```
-----
+
+
 
 ## Shared Research Drive Access
 (Taken from [RedHat documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/managing_file_systems/index#proc_accessing-a-share-as-a-user_assembly_performing-a-multi-user-smb-mount))

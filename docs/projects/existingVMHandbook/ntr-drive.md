@@ -4,11 +4,8 @@ categories: howto nectar
 ---
 
 # Contents
-  - [Research Drive Configuration](#research-drive-configuration)
-  - [Nectar VM Configuration](#nectar-vm-configuration)
-  - [Globus Data Transfers](#globus-data-transfers)
 
----
+[TOC]
 
 Nectar vms are located, by default, outside the University of Auckland firewall, 
 and your research drive is inside that firewall. <br/>

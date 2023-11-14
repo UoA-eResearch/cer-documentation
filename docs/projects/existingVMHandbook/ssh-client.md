@@ -11,20 +11,24 @@ Use a terminal to log in via ssh:
 $ ssh <user name>@<VM name>
 ```
 
-If you have admin privileges on the VM (sudo) you need to login through [2-factor authentication]({{ site.baseurl }}{% link _doc/two-factor-authentication.md %}). Otherwise just use your University password to log in.
+If you have admin privileges on the VM (sudo) you need to login through [2-factor authentication](./two-factor-authentication.md ). Otherwise, just use your University password to log in.
 
 Example:
 
 ```bash
-$ ssh mfel395@cerdkroprd01.its.auckland.ac.nz
+$ ssh abc123@cerdkroprd01.its.auckland.ac.nz
 ```
 
 ## If you're using Windows
 
-Windows doesn't have a built-in SSH client, we need to install one of the followings:
+Windows doesn't have a built-in SSH client, we need to install one of the following:
+
 - [MobaXterm](https://mobaxterm.mobatek.net/)
 - [Git bash](https://git-scm.com/download/win)
 - [PuTTY](https://git-scm.com/download/win)
 
-Open a terminal window after installation has completed, and login follow the same steps as Linux.
+Open a terminal window, after the installation has completed. Log in. Follow the same steps as Linux.
+
+!!! bug
+    that is not descriptive enough: "Follow the same steps as Linux."
 

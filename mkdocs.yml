@@ -28,13 +28,13 @@ theme:
         # icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
       primary: custom
-      accent: light blue   
+      accent: deep purple   # this is the light theme
     - scheme: slate 
       toggle:
         icon: material/theme-light-dark
         name: Switch to light mode    
       primary: custom
-      accent: light blue
+      accent: light green
   font:
     text: Roboto 
 
@@ -46,6 +46,8 @@ plugins:
   - macros
 
 markdown_extensions:
+  - attr_list
+  - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite

@@ -1,11 +1,18 @@
 ---
 title:  "How to launch an instance with Matlab pre-installed"
 categories: nectar howto
+status: deprecated
 ---
 
 ## Matlab Images
 
+!!! bug
+    
+    - is this really up to date?
+    - what contact to share?
+
 We offer two images with Matlab pre-installed:
+
 - **UoA-Server2012-MATLAB**: Windows Server 2012, Matlab 2018b
 - **UoA-Ubuntu1604-MATLAB**: Ubuntu Linux 1604, Matlab 2017b
 
@@ -13,13 +20,13 @@ To find these images, login to [Nectar Dashboard](https://dashboard.rc.nectar.or
 
 ![Fig1 Image](../assets/doc/ntr-matlab/fig1-image.png){:width="60%"}
 
-**Note**: You might also find some other community Matlab images, please don't use them and use those start with `UoA`. If you can not find these images, please [contact us]({{ site.baseurl }}{% link contact.md %}) and we'll grant you access.
+**Note**: You might also find some other community Matlab images, please don't use them and use those start with `UoA`. If you can not find these images, please contact us and we'll grant you access.
 
 Launch a VM with the image, and you'll be able to use Matlab when the VM is active.
 
 ## Matlab on Linux VMs
 
-You can access the GUI of the Matlab instance via x2go client. Please follow [this article](https://wiki.x2go.org/doku.php/doc:installation:x2goclient){:target="_blank"} to install x2go client.
+You can access the GUI of the Matlab instance via x2go client. Please follow [this article](https://wiki.x2go.org/doku.php/doc:installation:x2goclient) to install x2go client.
 
 In x2go client, create a new session, and make sure the following items are correctly configured:
 - **Host**: the IP address of your VM.
@@ -35,4 +42,4 @@ Then, connect with the new session, you should be able to see the graphical user
 
 To connect to your Windows VM on Nectar, please refer to this article:
 
-[How to access Windows VMs in Auckland cluster]({{ site.baseurl }}{% link _doc/ntr-windows.md %})
+[How to access Windows VMs in Auckland cluster](./ntr-windows.md)

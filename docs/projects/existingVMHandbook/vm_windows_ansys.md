@@ -1,6 +1,7 @@
 ---
 title:  "Running Ansys on Windows VM"
 categories: windows admin user howto
+status: deprecated
 ---
 
 

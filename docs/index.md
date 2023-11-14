@@ -153,7 +153,9 @@ Some examples, fenced by the `++` characters:
 - ++end++
 - ++tab++
 
+To add a custom label, you simply include this with double inverted commas
 
+++"My Text"++
 
 ## Code Annotation Examples
 
@@ -221,8 +223,13 @@ def bubble_sort(items):
 :octicons-heart-fill-24:{ .heart }
 
 
+:fontawesome-brands-youtube:{ style="color: #EE0F0F" }
+__[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
+15m – Learn how to create and host a documentation site using Material for
+MkDocs on GitHub Pages in a step-by-step guide.
 
-# Icons to use
+
+# How to use Icons 
 - MKDocs comes with a lot of icons
 - they are in the theme folder `.../venv/lib/python3.11/site-packages/material/templates/.icons/
 - an efficient way to find the icon you want is to check [this website](https://pictogrammers.com/library/mdi/)
@@ -241,8 +248,52 @@ icon: mdi:account-arrow-down-outline
 
 ## Using Variable
 
-<!-- here is a variable {{ macros_info() }} -->
 My name is {{name_variable}}
 the definition of the variables go in the `mkdocs.yml` file
+` yaml hl_lines="3"`
 
-``` yaml hl_lines="3"
+## Including images
+
+- images are stored in the `assets` folder
+- VSC can provide a relative link
+- the syntax is `![useful image](../assets/myimage.jpg)`
+  -   you can also use the `:width="50%"` to resize the image
+  -   you can also use the *hash fragments to make screenshots appear only in light or dark mode*
+      -   `#only-light)`
+      -   see example below
+
+![Image title](../assets/IDS-Wizard-Light.jpg#only-light){ width=50% loading=lazy}
+![Image title](../assets/IDS-Wizard-Dark.jpg#only-dark){ width=50% loading=lazy}
+<!-- loading=lazy align=right  -->
+
+- If we feel the need for a slide-show, we can have a look at [glightbox](https://github.com/blueswen/mkdocs-glightbox#usage)
+- We could also try to integrate a Python-based Macro to automatically add a lot of configurations (size, dark/light, alignment left, right, caption, ...)
+- If we need captions, [Markdown doesn't support that natively](https://squidfunk.github.io/mkdocs-material/reference/images/#image-alignment), so we'd have to [use html](https://squidfunk.github.io/mkdocs-material/reference/images/#image-captions)
+
+<figure markdown>
+  ![Image title](https://dummyimage.com/600x400/){ width="20%" loading=lazy}
+  <figcaption>Image caption</figcaption>
+</figure>
+
+
+### Capturing Screen Shots
+
+#### On a Mac
+++cmd+shift+4++ then ++space++ (to select just the window) then while holding ++option++ you click which stores it in the default location
+
+
+
+# Expanding content
+
+- collapsible boxes ([see above](#admonitions-aka-call-outs)) 
+  - this is also an example of how to reference another section in the same document. Lowercase and hypen instead of spaces. Easy to get this is to load the final documentation. Click the link generation. Copy from the browser URL bar. 
+- [annotations](https://squidfunk.github.io/mkdocs-material/reference/annotations/#usage)
+
+
+
+# Embedding Video
+
+One example here
+<div class="video-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/bNVaT4Tmcn4?si=X39WC1SGLI0WRSYS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>

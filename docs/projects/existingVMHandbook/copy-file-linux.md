@@ -6,7 +6,7 @@ categories: linux admin user howto
 
 ## Copy files with SFTP
 
-We recommend to use [FileZilla Client](https://filezilla-project.org/){:target="_blank"} to connect to your Linux VM. FileZilla supports Windows, Linux and Mac. Other SFTP clients can also be used. E.g., [CyberDuck](https://cyberduck.io/), [WinSCP](https://winscp.net).  
+We recommend to use [FileZilla Client](https://filezilla-project.org/) to connect to your Linux VM. FileZilla supports Windows, Linux and Mac. Other SFTP clients can also be used. E.g., [CyberDuck](https://cyberduck.io/), [WinSCP](https://winscp.net).  
 
 In Site Manager dialog of FileZilla, create a new site and fill in the following information:
 
@@ -18,9 +18,9 @@ In Site Manager dialog of FileZilla, create a new site and fill in the following
 - **Password**: leave it blank
 
 ![useful image](../assets/doc/copy-file-linux/filezilla.png){:width="600px"}
-<!-- ![useful image](../assets/doc/copy-file-linux/filezilla.png){:width="600px"} -->
 
-After clicking **Connect** button, enter password dialog will popup. In this dialog, uncheck the **Remember password until FileZilla is closed** checkbox, and enter the same password as [SSH login]({{ site.baseurl }}{% link _doc/ssh-client.md %}).
+
+After clicking **Connect** button, enter password dialog will popup. In this dialog, uncheck the **Remember password until FileZilla is closed** checkbox, and enter the same password as [SSH login](./ssh-client.md).
 
 ![useful image](../assets/doc/copy-file-linux/filezilla2.png){:width="300px"}
 

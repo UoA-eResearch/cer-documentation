@@ -54,7 +54,7 @@ Changes to that documentation:
 *   with python3 on your system, and no system `python` command:
     use the command
 
-    ```bash
-    python3 -m venv <venv_name>
-    source <venv_name>/bin/activate
-    ```
+```bash
+python3 -m venv <venv_name>
+source <venv_name>/bin/activate
+```

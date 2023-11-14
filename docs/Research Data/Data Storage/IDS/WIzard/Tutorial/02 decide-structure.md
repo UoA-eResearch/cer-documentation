@@ -10,11 +10,11 @@ At its heart, {{ service_name }} is a database. Data are organised in a hierarch
 ![image](../../assets/OnionModel.svg){width=300px}
 
 
-* Data files are grouped into `Datasets`.
-* `Datasets` are organised into `Experiments`.
-* `Experiments` belong to a `Project`.
+* Data files are grouped into *Datasets*.
+* *Datasets* are organised into *Experiments*.
+* *Experiments* belong to a *Project*.
 
-A `Dataset` may belong to multiple `Experiments`, and an `Experiment` may belong to multiple `Projects`.
+A *Dataset* may belong to multiple *Experiments*, and an *Experiment* may belong to multiple *Projects*.
 
 At each level of the hierarchy and at the individual file level, there are mandatory metadata fields that you can use to describe your data. There is also the ability to associate a custom metadata schema at each level, which allows you to record any relevant domain-specific observations and variables. The {{ service_name }} Search functionality allows you to filter for data based on metadata.
 
@@ -24,11 +24,11 @@ Here are some things to consider when deciding how your data should fit into thi
 
 ![image](../../assets/OnionModel2.svg){height=300px}
 
-* Usually, there should be one `Project` that corresponds to the research project or unit of research activity that you are collecting data for.
-* Use `Experiments` to represent a study sample or variable you are studying. Store properties about the sample as metadata in each `Experiment`.
-* Create one `Dataset` for each instrument you are using for acquiring data. Use the `Dataset` to contain all data files from that instrument for the `Experiment`. Store instrument run conditions as metadata in each `Dataset`.
+* Usually, there should be one *Project* that corresponds to the research project or unit of research activity that you are collecting data for.
+* Use *Experiments* to represent a study sample or variable you are studying. Store properties about the sample as metadata in each *Experiment*.
+* Create one *Dataset* for each instrument you are using for acquiring data. Use the *Dataset* to contain all data files from that instrument for the *Experiment*. Store instrument run conditions as metadata in each *Dataset*.
 * If the data is already using a directory structure, consider how that could translate into the hierarchical groupings.
-* Consider whether you need to restrict access for a subset of your data. If so, you can group them as separate `Experiments` or `Datasets`. Later, you can restrict access to them as a whole group.
+* Consider whether you need to restrict access for a subset of your data. If so, you can group them as separate *Experiments* or *Datasets*. Later, you can restrict access to them as a whole group.
 
 # Sarah's sequencing data
 
@@ -57,7 +57,7 @@ After a discussion with your collaborators, you have created this data structure
 
  - **Project** - The Project is called “Breast Cancer Drug Treatment Genomics” project, with the ID “BREAST04”.
  - **Experiments** - One experiment for each treatment type (i.e. “No treatment” with ID “NoTreatment”, “Herceptin” with ID “Herceptin”, Keytruda with ID “Keytruda”).
- - **Datasets** - In each Experiment, there would be two `Datasets`: one for raw `.fastq` files named “Raw” with ID “[Treatment ID]-Raw”, and another for aligned `.bam` files named “Aligned” with ID “[Treatment ID]-Aligned”.
+ - **Datasets** - In each Experiment, there would be two *Datasets*: one for raw `.fastq` files named “Raw” with ID “[Treatment ID]-Raw”, and another for aligned `.bam` files named “Aligned” with ID “[Treatment ID]-Aligned”.
  - **Datafiles** - Under each Dataset, there would be five files, one file from each tissue sample.
  - Clinical details and sequencing instrument configurations will be recorded as metadata at the Dataset level.
 
@@ -96,6 +96,6 @@ Project: “Breast Cancer Drug Treatment Genomics” - ID “BREAST04”/
 ```
 
 !!! example "Exercise: How does your own data fit into this hierarchy?"
-    Think about the data you would like to ingest into {{ service_name }} and discuss with your collaborators. Plan out how you would structure the data. Ask for a consultation with the friendly {{ service_name }} staff if you would like some help!
+    Think about the data you would like to ingest into {{ service_name }} and discuss it with your collaborators. Plan out how you would structure the data. Ask for a consultation with the friendly {{ service_name }} staff if you would like some help!
 
 

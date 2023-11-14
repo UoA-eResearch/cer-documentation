@@ -1,28 +1,28 @@
 # Annotate your data with metadata
 
-Now that your files are imported and organised, you can start annotating them.
+Now that your files are imported and organised, you can start annotating them. This step is vital to make the most use of the {{ service_name }}.
 
 ## Basic metadata fields
 
-In {{ service_name }}, there is a basic set of metadata fields applicable for any `Projects`, `Experiments`, `Datasets` or `Datafiles`. They are fields like name, ID, author and institution.
+In {{ service_name }}, there is a basic set of metadata fields applicable for any Projects, Experiments, Datasets or Datafiles. They are fields like `name`, `ID`, `author` and `institution`.
 
-## Additional metadata with `Schemas`
+## Additional metadata with Schemas
 
-In addition, you can attach more metadata to a `Project`, `Experiment`, `Dataset` or `Datafile` through `Schemas`. They are made up of custom metadata fields called `Parameters`. You can specify the `Parameter` name and the value data type (for example, you can restrict the value to be a number, a string of characters, or a date.) 
+In addition, you can attach more metadata to a Project, Experiment, Dataset or Datafile through `Schemas`. They are made up of custom metadata fields called `Parameters`. You can specify the `Parameter` name and the value data type (for example, you can restrict the value to be a number, a string of characters, or a date.) 
 
 `Schemas` need to be defined in {{ service_name }} before you can use them in Instrument Data Wizard. 
 
-A `Project`, `Experiment`, `Dataset` or `Datafile` can have multiple `Schemas` associated with them.
+A Project, Experiment, Dataset or Datafile can have **multiple** `Schemas` associated with them.
 
-!!! question "What can I store in `Schemas`?"
+!!! question "What can I store in Schemas?"
 
-    You can associate domain- or instrument- specific metadata with a `Project`, `Experiment`, `Dataset` or `Datafile` using `Schemas`. One way to use `Schema` could be to describe the study or treatment you have applied to the sample. Alternatively, you may wish to note down the instrument configuration used for acquiring data. For example, data from a sequencer may benefit from a `Schema` with depth of sequencing and sequencing method as `Parameters`.
+    You can associate domain- or instrument-specific metadata with a Project, Experiment, Dataset or Datafile using `Schemas`. One way to use `Schema` could be to describe the study or treatment you have applied to the sample. Alternatively, you may wish to note down the instrument configuration used for acquiring data. For example, data from a sequencer may benefit from a `Schema` with depth of sequencing and sequencing method as `Parameters`.
     
-    It's best to create a data dictionary document with your collaborators to specify what metadata should be stored. See :ref:`data-dictionary`. 
+    It's best to create a data dictionary document with your collaborators to specify what metadata should be stored. See [data dictionary](../03 data-dictionary.md). 
     
-    As part of onboarding, {{ service_name }} can support you in creating a data dictionary, and create any `Schemas` for your research group. Contact |service_contact|_ for more information.
+    As part of onboarding, {{ service_name }} can support you in creating a data dictionary, and create any `Schemas` for your research group. Contact {{ service_contact }} for more information.
 
-In the Instrument Data Wizard, first select the `Project`, `Experiment`, `Dataset` or `Datafile` you wish to edit, then you can change metadata on the right-hand pane.
+In the Instrument Data Wizard, first select the *Project*, *Experiment*, *Dataset* or *Datafile* you wish to edit, then you can change metadata on the right-hand pane.
 
 ![image](../../assets/metadata-2.png)
 
@@ -41,7 +41,7 @@ To record the instrument, you first need to find the instrument's [persistent id
 
 !!! question "Where can I find my instrument's persistent identifier?"
     
-    You can log in to the {{ service_name }} web portal to find the ID. See :ref:`finding-instrument-id`.
+    You can log in to the {{ service_name }} web portal to find the ID. See [here](../../04%20finding-instrument-id/).
 
 Instrument is a basic metadata field, so you can find it in the `Description` tab, as the `Instrument ID` field.
 
@@ -65,7 +65,7 @@ If you need to delete a `Parameter` row, select that row, then click the `Remove
 
 ## Exercise: Adding more metadata
 
-1. `Lead Researcher` is another basic metadata field on `Projects`. Try adding yourself as the lead researcher in the `Project`, using Sarah's University username :code:`skau921`.
+1. `Lead Researcher` is another basic metadata field on `Projects`. Try adding yourself as the lead researcher in the `Project`, using Sarah's University username `skau921`.
 
     Your editor should look like this:
 

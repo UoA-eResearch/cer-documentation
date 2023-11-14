@@ -8,16 +8,28 @@ A step-by-step wizard will show up, with the first page giving a brief introduct
 
 ![image](../../assets/import-2.png)
 
-## Add the first `Project`, `Experiment`, `Dataset` and `Datafiles`
+## Add the first Project, Experiment, Dataset and Datafiles
 
 Click *Next*. In the subsequent dialogs, the wizard will ask you where you would like to organise your data. Because we are starting with a blank metadata file, the wizard will ask you to create a new Project, Experiment and Dataset. 
 
 As Sarah, you would like to import your raw data for the Keytruda trial. See if you can re-create this hierarchy in the Instrument Data Wizard:
 
-* Project: Name: "Breast Cancer Drug Treatment Genomics", with ID "BREAST04".
-* Experiment: Name: "Keytruda", with ID "Keytruda".
-* Dataset: Name: "Raw", with ID "Keytruda-Raw".
-* Data files: Add all the .fastq files in the tutorial data folder, under `tutorial-data/keytruda/`.
+| Level      | Cell                                                                               | Input text                             |
+|------------|------------------------------------------------------------------------------------|----------------------------------------|
+| Project    | Proiect name                                                                       | Breast Cancer Drug Treatment Genomics  |
+|            | Proiect identifier                                                                 | BREAST04                               |
+|            | Principal Investigator                                                             | UPI123                                 |
+|            | Description                                                                        | My nice description of the project.    |
+| Experiment | Experiment name                                                                    | Keytruda                               |
+|            | Experiment identifier                                                              | Keytruda                               |
+|            | Description                                                                        | My nice description of the experiment. |
+| Dataset    | Dataset name                                                                       | Raw                                    |
+|            | Dataset identifier                                                                 | Keytruda-Raw                           |
+|            | Instrument identifier                                                              | BiruVSlide1                            |
+| Datafiles  | all .fastq files `tutorial-data/keytruda/`.                                        |
+
+The instrument ID (the persistent identifier, `PIDINST`) will be provided by the Facility Manager.
+
 
 Once finished, your editor should look like this.
 
@@ -25,16 +37,18 @@ Once finished, your editor should look like this.
 
 !!! note "What if I want to add data into an existing `Project` in the repository?"
 
-    If there is already a Project for your data in the data repository, you need to import it into the Instrument Data Wizard before you can start adding files to it. You can follow the instructions for :doc:`Adding data to existing Projects, Experiments or Datasets in the data repository <../adding-to-existing-structure>`.
+    If there is already a Project for your data in the data repository, you need to import it into the Instrument Data Wizard before you can start adding files to it. You can follow the instructions for [Adding data to existing Projects, Experiments or Datasets](../02 adding-to-existing-structure.md).
 
-!!! bug
-    how to get this relative link working?
 
 ## Add more data
+
+
 
 What if you have files you need to organise separately from the initial import? Or if you need to add more files into the same dataset? For example, you may wish to ingest more than one sample or instrument run data files.
 
 You can click the `Import data files` button again, and the step-by-step wizard will prompt you to add files and ask how you would like to organise them.
+
+![image](../../assets/AddDataAgain.jpg)
 
 You can also right-click on the `Project`, `Experiment` or `Dataset` you would like to add more data to, and select the `Add Experiment`, `Add Dataset` or `Add files` options.
 

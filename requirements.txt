@@ -1,0 +1,5 @@
+mkdocs-material
+mkdocs-mermaid2-plugin
+mkdocs-macros-plugin
+pillow 
+cairosvg

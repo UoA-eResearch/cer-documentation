@@ -1,3 +1,9 @@
+---
+title:  "Annotating your first dataset"
+type: tutorial
+order: 1
+---
+
 # Tutorial: Annotating your first dataset
 
 Welcome! This tutorial will help you annotate a dataset using the

@@ -1,3 +1,9 @@
+---
+title:  "Decide how to describe and structure your data"
+type: tutorial
+order: 2
+---
+
 # Decide how to describe and structure your data
 
 

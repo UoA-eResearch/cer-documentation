@@ -1,3 +1,7 @@
+---
+title:  "Nectar"
+---
+
 # Nectar
 
 The [Nectar Research Cloud](https://dashboard.rc.nectar.org.au/auth/login/?next=/project/) is an excellent resource for researchers to get access to a wide range of computational resources.

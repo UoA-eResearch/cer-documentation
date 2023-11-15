@@ -1,3 +1,9 @@
+---
+title:  "Save the ingestion file"
+type: tutorial
+order: 6
+---
+
 # Save the ingestion file
 
 Once you are finished organising and annotating your data, you can save

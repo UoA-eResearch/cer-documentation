@@ -1,4 +1,5 @@
 site_name: CeR Documentation
+site_url: https://uoa-eresearch.github.io/cer-documentation/
 theme: 
   name: material  
   logo: assets/UoALogoWhite.png

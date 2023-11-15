@@ -1,3 +1,9 @@
+---
+title:  "Restrict access to your data"
+type: tutorial
+order: 5
+---
+
 # Restrict access to your data
 
 In the Instrument Data Wizard, you can define which users or groups of users have access to your data in the {{ service_name }}. 

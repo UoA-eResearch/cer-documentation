@@ -1,3 +1,7 @@
+---
+title:  "Dropbox"
+---
+
 # How to get access
 - link to Research Hub
 - a lot of detailed documentation from the Dropbox.com website can be linked

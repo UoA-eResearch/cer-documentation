@@ -1,3 +1,9 @@
+---
+title:  "Annotate your data with metadata"
+type: tutorial
+order: 4
+---
+
 # Annotate your data with metadata
 
 Now that your files are imported and organised, you can start annotating them. This step is vital to make the most use of the {{ service_name }}.

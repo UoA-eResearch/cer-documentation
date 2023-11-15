@@ -1,3 +1,7 @@
+---
+title:  "Figshare"
+---
+
 # Figshare
 
 - clearly state that auckland.fighshare.com isn't the same as figshare.com

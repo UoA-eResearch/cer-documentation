@@ -1,3 +1,8 @@
+---
+title:  "Globus"
+---
+
+
 # Globus
 
 We want to adapt the [efforts at Stanford](https://globus.stanford.edu/)

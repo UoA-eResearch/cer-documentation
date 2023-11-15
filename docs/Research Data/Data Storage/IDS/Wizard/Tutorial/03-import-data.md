@@ -1,3 +1,9 @@
+---
+title:  "Import your data into the Instrument Data Wizard"
+type: tutorial
+order: 3
+---
+
 # Import your data into the Instrument Data Wizard
 
 To import your data into the Instrument Data Wizard, open the Wizard and click the `Import data files` button.

@@ -10,8 +10,6 @@ jobs:
   linkchecker:
     runs-on: ubuntu-latest
 
-    needs: pages-build-deployment
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2

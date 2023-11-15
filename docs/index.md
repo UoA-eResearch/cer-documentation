@@ -231,7 +231,7 @@ MkDocs on GitHub Pages in a step-by-step guide.
 
 # How to use Icons 
 - MKDocs comes with a lot of icons
-- they are in the theme folder `.../venv/lib/python3.11/site-packages/material/templates/.icons/
+- they are in the theme folder `../venv/lib/python3.11/site-packages/material/templates/.icons/`
 - an efficient way to find the icon you want is to check [this website](https://pictogrammers.com/library/mdi/)
 - to use them, you need to adapt the syntax a bit: 
   - for example: you would find
@@ -256,14 +256,14 @@ the definition of the variables go in the `mkdocs.yml` file
 
 - images are stored in the `assets` folder
 - VSC can provide a relative link
-- the syntax is `![useful image](../assets/myimage.jpg)`
+- the syntax is `![useful image](./assets/myimage.jpg)`
   -   you can also use the `:width="50%"` to resize the image
   -   you can also use the *hash fragments to make screenshots appear only in light or dark mode*
       -   `#only-light)`
       -   see example below
 
-![Image title](../assets/IDS-Wizard-Light.jpg#only-light){ width=50% loading=lazy}
-![Image title](../assets/IDS-Wizard-Dark.jpg#only-dark){ width=50% loading=lazy}
+![Image title](./assets/IDS-Wizard-Light.jpg#only-light){ width=50% loading=lazy}
+![Image title](./assets/IDS-Wizard-Dark.jpg#only-dark){ width=50% loading=lazy}
 <!-- loading=lazy align=right  -->
 
 - If we feel the need for a slide-show, we can have a look at [glightbox](https://github.com/blueswen/mkdocs-glightbox#usage)

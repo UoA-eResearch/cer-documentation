@@ -76,6 +76,7 @@ Prerequisites:
 - you should have the name of the Research Drive whose migration shall be sped up handy
 - you should have mounted this Research Drive to a machine (local or Virtual Machine) that ideally has Python installed
 
+TODO #17 STANDARD BOXES SHOULD BE USED HERE
 
 Steps:
 
@@ -89,4 +90,6 @@ Steps:
     - `check_recall_progress.py -f filelist.txt`
       - Output 2 = `recall_progress.csv` located in your home folder (`~`)
   - The actual migration to Archive process it triggered by running this final command which relies on the previous Outputs 1 and 2: `check_recall_progress.py`
+
+
 

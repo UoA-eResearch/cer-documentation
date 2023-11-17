@@ -19,7 +19,7 @@ Instrument Data Wizard, in preparation for ingestion into {{ service_name }}.
 !!! info "What is the Instrument Data Wizard?"
 
     If you're not familiar with what {{ service_name }} and Instrument Data
-    Wizard do, and how they work together, check out [this](../data-dictionary.md) first.
+    Wizard do, and how they work together, check out [this](./data-dictionary.md) first.
 
 
 

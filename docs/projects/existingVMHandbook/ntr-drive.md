@@ -38,7 +38,7 @@ With both your research-drive and nectar vm now configured to be accessible thro
 
 1. start the globus personal connect application on your nectar vm (see the installation page 
 [globus personal endpoint](https://docs.globus.org/how-to/) for a fully-worked example).
-2. in your browser, sign in to [globus](globus.org) selecting the "existing organizational login" 
+2. in your browser, sign in to [globus](https://globus.org) selecting the "existing organizational login" 
 associated with `The University of Auckland` (single-sign-on).
 3. Proceed to globus's [FileManager](https://app.globus.org/file-manager) page, and select
 the two endpoints you want to connect:

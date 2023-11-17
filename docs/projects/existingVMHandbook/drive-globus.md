@@ -36,7 +36,7 @@ Essentially, you need to do one of two things to ensure your globus connect pers
 [NeSI documentation](https://support.nesi.org.nz/hc/en-gb/articles/4405623380751-Data-Transfer-using-Globus-V5)
 
 * You can create a personal endpoint on your Nectar vm and transfer data between your research drive and your nectar vm:
-[Nectar vm data-transfers](./ntr-drive.html)
+[Nectar vm data-transfers](./ntr-drive.md)
 
    
 

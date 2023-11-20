@@ -3,7 +3,7 @@ site_url: https://uoa-eresearch.github.io/cer-documentation/
 theme: 
   name: material  
   logo: assets/UoALogoWhite.png
-  favicon: assets/favicon.png
+  favicon: assets/favicon.ico
   features:
     - navigation.tabs
     - navigation.tabs.sticky # tabs on top won't disappear when scrolling down

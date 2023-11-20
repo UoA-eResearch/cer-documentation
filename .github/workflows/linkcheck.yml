@@ -2,7 +2,7 @@ name: Link Checker
 
 on:
   workflow_run:
-    workflows: ["pages-build-deployment"]
+    workflows: ["static"]
     branches: [main]
     types: 
       - completed

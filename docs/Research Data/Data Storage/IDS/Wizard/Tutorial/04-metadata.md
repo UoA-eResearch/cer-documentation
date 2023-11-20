@@ -24,7 +24,7 @@ A Project, Experiment, Dataset or Datafile can have **multiple** `Schemas` assoc
 
     You can associate domain- or instrument-specific metadata with a Project, Experiment, Dataset or Datafile using `Schemas`. One way to use `Schema` could be to describe the study or treatment you have applied to the sample. Alternatively, you may wish to note down the instrument configuration used for acquiring data. For example, data from a sequencer may benefit from a `Schema` with depth of sequencing and sequencing method as `Parameters`.
     
-    It's best to create a data dictionary document with your collaborators to specify what metadata should be stored. See [data dictionary](../data-dictionary.md). 
+    It's best to create a data dictionary document with your collaborators to specify what metadata should be stored. See [data dictionary](../03-data-dictionary.md). 
     
     As part of onboarding, {{ service_name }} can support you in creating a data dictionary, and create any `Schemas` for your research group. Contact {{ service_contact }} for more information.
 

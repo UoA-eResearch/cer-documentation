@@ -43,7 +43,7 @@ Once finished, your editor should look like this.
 
 !!! note "What if I want to add data into an existing `Project` in the repository?"
 
-    If there is already a Project for your data in the data repository, you need to import it into the Instrument Data Wizard before you can start adding files to it. You can follow the instructions for [Adding data to existing Projects, Experiments or Datasets](../02 adding-to-existing-structure.md).
+    If there is already a Project for your data in the data repository, you need to import it into the Instrument Data Wizard before you can start adding files to it. You can follow the instructions for [Adding data to existing Projects, Experiments or Datasets](../02-adding-to-existing-structure.md).
 
 
 ## Add more data

@@ -1,9 +1,11 @@
 name: Link Checker
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    branches: [main]
+    types: 
+      - completed
   workflow_dispatch:
 
 jobs:

@@ -16,9 +16,9 @@ To access the above resources from off campus:
 #### Connecting to the VPN
 Guides detailing how to install FortiClient and connect to the VPN:
 
-* [FortiClient guide](../assets/doc/drive-off-campus/how-to-guide-for-forticlient-vpn.pdf)
-* [Windows Video Guide ]( https://youtu.be/xRTBHlLycm4)
-* [Video Guide ]( https://youtu.be/tYSyPi9hM5Y)
+* [FortiClient guide](./assets/doc/drive-off-campus/how-to-guide-for-forticlient-vpn.pdf)
+* [Windows Video Guide ](https://youtu.be/xRTBHlLycm4)
+* [Video Guide ](https://youtu.be/tYSyPi9hM5Y)
   
 Once you have successfully connected to the UoA VPN, you can refer to the below links for instructions on accessing network drives and VMs.
 
@@ -26,11 +26,11 @@ Once you have successfully connected to the UoA VPN, you can refer to the below 
 
 * Mac:
     - [Text Guide](./map-drive-mac.md)
-    - [Video Guide]( https://youtu.be/1TF_5Ejpmv4)
+    - [Video Guide](https://youtu.be/1TF_5Ejpmv4)
 
 * Windows:
     - [Text Guide](/.map-drive-windows.md)
-    - [Video guide]( https://youtu.be/HNlL4UCZcIs)
+    - [Video guide](https://youtu.be/HNlL4UCZcIs)
 
 #### Connecting to your VM
 

@@ -47,7 +47,7 @@ To record the instrument, you first need to find the instrument's [persistent id
 
 !!! question "Where can I find my instrument's persistent identifier?"
     
-    You can log in to the {{ service_name }} web portal to find the ID. See [here](../../04%20finding-instrument-id/).
+    You can log in to the {{ service_name }} web portal to find the ID. See [here](../../04-finding-instrument-id/).
 
 Instrument is a basic metadata field, so you can find it in the `Description` tab, as the `Instrument ID` field.
 

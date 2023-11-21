@@ -1,0 +1,103 @@
+{% set exit_href %}
+  {% if page.parent %}
+    {% if page.parent.url %}
+      {{ page.parent.url | url  }}
+    {% elif page.parent.children[0].is_index %}
+      {{ page.parent.children[0].url | url }}
+    {% endif %}
+  {% else %}
+    {{ config.extra.homepage | d(nav.homepage.url, true) | url }}
+  {% endif %}
+{% endset %}
+<style>
+.stepper{
+  width:calc(100% - var(--sidebar-width));
+  position: fixed;
+  right:0;
+  bottom:2rem;
+  padding:0 5vw;
+  overflow: visible;
+  align-items: flex-end;
+}
+#previous-step{
+  font-size:1.2rem;
+  font-weight:400;
+  height:1.6em;
+}
+#next-step{
+  font-size:1.2rem;
+}
+#done{
+  border-radius:50%;
+  width: 4em;
+  height: 4em;
+  position: relative;
+}
+#done .md-icon{
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  }
+#done .md-icon svg {
+  height: initial;
+  width: initial;
+}
+body[dir="rtl"] .stepper{
+  right:auto;
+  left:0;
+}
+@media screen and (max-width:76.1875em){
+  .stepper{
+    width:100%;
+  }
+}
+</style>
+<nav
+class="md-footer__inner stepper"
+aria-label="{{ lang.t('footer.title') }}"
+>
+<!-- Link to previous page -->
+  {% set direction = lang.t("footer.previous") %}
+  <a
+    id="previous-step"
+    href="#"
+    class="md-footer__link--prev"
+    aria-label="{{ direction }}:"
+    rel="prev"
+    disappear
+  >
+    <div class="md-icon">
+      &#8617;
+      <!-- include ".icons/material/arrow-u-left-bottom.svg" -->
+    </div>
+  </a>
+
+<!-- Link to next page -->
+  {% set direction = lang.t("footer.next") %}
+  <a
+    id="next-step"
+    href="#"
+    class="md-footer__link--next"
+    aria-label="{{ direction }}:"
+    rel="next"
+  >
+    <div class="md-icon">
+      {% include ".icons/material/arrow-right.svg" %}
+    </div>
+  </a>
+
+  <a
+  id="done"
+  href="{{ exit_href | trim }}"
+  class="md-footer__link--next"
+  aria-label="{{ lang.t('codelab.exit') }}"
+  rel="done"
+  hidden
+  >
+  <div class="md-icon">
+    {% include ".icons/material/check.svg" %}
+  </div>
+</a>
+</nav>

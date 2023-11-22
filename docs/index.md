@@ -213,6 +213,8 @@ def bubble_sort(items):
 
 ## Icons and Emojs
 
+An efficient way of finding fonts in the correct syntax is to use [this website](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search)
+
 :smile: 
 
 :fontawesome-regular-face-laugh-wink:

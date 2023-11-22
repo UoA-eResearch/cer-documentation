@@ -33,5 +33,5 @@ If you cut and paste a file out of vault/archive, it will remain on slower stora
 **Files have a cross on the icon (Windows only)**  
 This indicates that a file is on slower storage.
 
-![useful image](../assets/doc/drive-vault-and-archive/archived_files.png){:width="600px"}
+![useful image](./assets/doc/drive-vault-and-archive/archived_files.png){:width="600px"}
 

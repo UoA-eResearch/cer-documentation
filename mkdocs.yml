@@ -1,9 +1,15 @@
 site_name: CeR Documentation
 site_url: https://uoa-eresearch.github.io/cer-documentation/
+# NOT SURE ABOUT THESE
+site_dir: public
 theme: 
   name: material  
   logo: assets/UoALogoWhite.png
   favicon: assets/favicon.ico
+  custom_dir: codelab
+  include_search_page: false
+  search_index_only: true
+  global: true
   features:
     - navigation.tabs
     - navigation.tabs.sticky # tabs on top won't disappear when scrolling down
@@ -44,10 +50,29 @@ plugins:
   - search
   - mermaid2
   # - projects
+  - codelab:
+      auto_number: true
+      delimiter: 'h2, [step]'
+      # Wrapper HTML element such as <section></section>
+      # step_element: 'section' # default 'section',
+      # assigns a class to the element
+      # step_class: 'labstep' # default: labstep
+      # CSS selector used to distinguish between step passages
+      # delimiter: 'h2' # default 'h2' which corresponds to Markdown H2 (##)
+      # auto_number: false # Whether to auto-number sections
+
+  - git-revision-date
+  - minify:
+      minify_html: true
+      htmlmin_opts:
+          remove_comments: true
   - macros
 
 markdown_extensions:
-  - attr_list
+  - abbr
+  - def_list
+  - meta
+  - sane_lists
   - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
@@ -64,13 +89,32 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.mark
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  # - pymdownx.magiclink:
+  #     repo_url_shorthand: true
+  #     user: squidfunk
+  #     repo: mkdocs-material
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
   - attr_list
   - toc:
       permalink: true
-  - pymdownx.keys
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+
   - pymdownx.superfences:
         # make exceptions to highlighting of code:
       custom_fences:
@@ -92,5 +136,3 @@ extra:
 copyright: |
   &copy; 2023 <a href="https://eresearch.auckland.ac.nz/"  target="_blank" rel="noopener">UoA CeR</a>
 
-  
-  

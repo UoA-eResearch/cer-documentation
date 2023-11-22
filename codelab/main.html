@@ -1,0 +1,120 @@
+<!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+{% extends "base.html" %}
+
+{% block extrahead %}
+<style>
+main{
+	transition:opacity ease-in 0.2s
+}
+ [hidden]{
+	display:none !important;
+}
+[unresolved] {
+    opacity: 0;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+[dir="ltr"] .md-typeset :is(.admonition-title, summary) {
+  border-left-width: 0;
+}
+body[dir="ltr"] .ltr-flip {
+  transform:scaleX(-1)
+}
+body[dir="rtl"] .ltr-flip {
+  transform: none
+}
+header form{
+  margin-bottom:0
+}
+{% if page and page.meta.codelab %}
+    {% include "partials/mkdocs-override.css" %}
+  </style>
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/codelab_bin.css' | url  }}">
+{% else %}
+    </style>
+{% endif %}
+{% endblock %}
+
+<!-- Theme-related JavaScript -->
+{% block scripts %}
+  {{ super() }}
+
+  <script>
+    window.requestAnimationFrame(
+      function(){
+        let u = document.querySelector('[unresolved]');
+        u.removeAttribute("unresolved");
+      });
+  </script>
+
+  {% if page and page.meta.codelab %}
+  <script src="{{ 'assets/javascripts/codelab.js' | url }}"></script>
+  {% endif %}
+{% endblock %}
+
+{% block header %}
+  {% if page and page.meta.codelab %}
+    {% include "partials/lab-header.html" %}
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
+{% block site_nav %}
+  {% if page and page.meta.codelab %}
+    {% include "partials/lab-steps-toc.html" %}
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {% set tabheight_offset %}
+    {% if "navigation.tabs" in features and not (page and page.meta and "tabs" in page.meta.hide) %}
+      tabs
+    {% endif %}
+  {% endset %}
+
+  {% if page and page.meta.codelab %}
+    <div id="steps" class="md-typeset main-height {{ tabheight_offset }}"
+      label="{{ page.title | replace(' ', '-') }}">
+      <article class="md-content" data-md-component="content">
+        {% include "partials/lab-content.html" %}
+      </article>
+      <!-- Step previous and/or next -->
+      {% include "partials/stepper.html" %}
+    </div>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
+{% block footer %}
+  {% if page and page.meta.codelab %}
+  {% else %}
+  {{ super() }}
+  {% endif %}
+{% endblock %}

@@ -3,3 +3,12 @@ mkdocs-mermaid2-plugin
 mkdocs-macros-plugin
 pillow 
 cairosvg
+
+# added by me to install the codelab processor
+jinja2==3.0.3
+mkdocs
+mkdocs-minify-plugin
+mkdocs-git-revision-date-plugin
+lxml
+cssselect
+./codelab_processor

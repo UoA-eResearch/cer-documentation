@@ -9,7 +9,7 @@ categories: windows admin user howto
 
 Create a new remote desktop connection. Set the **Computer** as the VM's host name and **User name** as `UOA\<Your user name>`.
 
-![useful image](../assets/doc/remote-desktop/screenshot1.png){:width="50%"}
+![useful image](./assets/doc/remote-desktop/screenshot1.png){:width="50%"}
 
 Then, click **Connect** and enter your university password.
 
@@ -19,7 +19,7 @@ Download the **Microsoft Remote Desktop** client from the [Mac App Store](https:
 
 Create a new remote desktop connection. Set the **PC name** as the VM's host name and **User name** as `UOA\<Your user name>`.
     
-![useful image](../assets/doc/remote-desktop/screenshot2.png){:width="50%"}
+![useful image](./assets/doc/remote-desktop/screenshot2.png){:width="50%"}
 
 Then, you can login with your university password.
 
@@ -30,12 +30,12 @@ To access local files from virtual machines, you need to configure the remote de
 
 On Windows, choose your **local resources** in the settings of your remote desktop connection window.  Notice below the **More** button at the bottom which takes you to the local devices and resources section which allows resources to be chosen.
 
-![useful image](../assets/doc/remote-desktop/screenshot3.png){:width="50%"}
+![useful image](./assets/doc/remote-desktop/screenshot3.png){:width="50%"}
 
 On Mac, Add local resources follow the screen shot below:
 
-![useful image](../assets/doc/remote-desktop/screenshot4.png){:width="50%"}
+![useful image](./assets/doc/remote-desktop/screenshot4.png){:width="50%"}
 
 On your virtual machine, open **Explorer**, you will see these redirected drives underneath your **Devices and drives** area. They will be designated by "drive letter" on "computername" where computername is your host.
 
-![useful image](../assets/doc/remote-desktop/screenshot5.png){:width="50%"}
+![useful image](./assets/doc/remote-desktop/screenshot5.png){:width="50%"}

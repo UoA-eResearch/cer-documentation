@@ -1,7 +1,6 @@
 # Documentation Architecture
 
-
-here i test using HTML
+add Codelab theory here
 
 ## The existing Documentation
 
@@ -297,3 +296,16 @@ One example here
 <div class="video-wrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/bNVaT4Tmcn4?si=X39WC1SGLI0WRSYS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+
+
+### Adding tool tips or abbreviations
+We can just type out text as per the usual with some acronyms. But as we use `*[TLA]: Three Letter Acronym` below this isn't shown but once we hover over the text in question, a tip shows up
+
+The HTML specification is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]: World Wide Web Consortium
+
+We can also add this to icons
+
+:material-information-outline:{ title="Important information that I attach here" }

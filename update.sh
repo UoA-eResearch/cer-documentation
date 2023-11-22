@@ -6,10 +6,10 @@ cwd=$(pwd)
 loc=$(pip show mkdocs-material | grep -Po '(?<=Location: )(.*)' )
 v=$( pip show mkdocs-material | grep -Po '(?<=Version: )(\S*)')
 dir="$loc/mkdocs_material-$v.dist-info/RECORD"
-CSS_BUNDLE=$( grep -Po '(?<=material/)(.*main\..*\.min.css)(?=,)' $dir )
-PAL_BUNDLE=$( grep -Po '(?<=material/)(.*palette\..*\.min.css)(?=,)' $dir )
-SW_BUNDLE=$( grep -Po '(?<=material/)(.*search\..*\.min.js)(?=,)' $dir )
-JS_BUNDLE=$( grep -Po '(?<=material/)(.*bundle\..*\.min.js)(?=,)' $dir )
+CSS_BUNDLE=$( grep -Po '(?<=material/templates/)(.*main\..*\.min.css)(?=,)' $dir )
+PAL_BUNDLE=$( grep -Po '(?<=material/templates/)(.*palette\..*\.min.css)(?=,)' $dir )
+SW_BUNDLE=$( grep -Po '(?<=material/templates/)(.*search\..*\.min.js)(?=,)' $dir )
+JS_BUNDLE=$( grep -Po '(?<=material/templates/)(.*bundle\..*\.min.js)(?=,)' $dir )
 
 echo $CSS_BUNDLE
 echo $PAL_BUNDLE

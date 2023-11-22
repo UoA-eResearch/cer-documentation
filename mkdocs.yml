@@ -9,7 +9,7 @@ theme:
   custom_dir: codelab
   include_search_page: false
   search_index_only: true
-  global: true
+  global: false
   features:
     - navigation.tabs
     - navigation.tabs.sticky # tabs on top won't disappear when scrolling down

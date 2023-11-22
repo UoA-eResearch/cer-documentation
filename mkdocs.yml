@@ -62,6 +62,7 @@ plugins:
       # auto_number: false # Whether to auto-number sections
 
   - git-revision-date
+  - macros
   - minify:
       minify_html: true
       htmlmin_opts:

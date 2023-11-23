@@ -29,7 +29,7 @@ Once you have successfully connected to the UoA VPN, you can refer to the below 
     - [Video Guide](https://youtu.be/1TF_5Ejpmv4)
 
 * Windows:
-    - [Text Guide](/.map-drive-windows.md)
+    - [Text Guide](./map-drive-windows.md)
     - [Video guide](https://youtu.be/HNlL4UCZcIs)
 
 #### Connecting to your VM

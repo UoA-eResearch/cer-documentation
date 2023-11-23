@@ -5,7 +5,7 @@ categories: howto drive
 
 Your research drive comes with two folders especially for data that is only occasionally accessed, the `vault` and `archive` folders.
 
-![useful image](../assets/doc/drive-vault-and-archive/archive-vault.png){:width="600px"}
+![useful image](./assets/drive-vault-and-archive/archive-vault.png){:width="600px"}
 
 ### Vault
 Access is slightly slower than your normal disk storage, ideal for data that you have finished working on but would like to come back to every few months.

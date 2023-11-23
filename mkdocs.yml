@@ -9,7 +9,7 @@ theme:
   custom_dir: codelab
   include_search_page: false
   search_index_only: true
-  global: false
+  global: false # this specifies if each new md is treated as a codelab by default or not
   features:
     - navigation.tabs
     - navigation.tabs.sticky # tabs on top won't disappear when scrolling down
@@ -19,12 +19,12 @@ theme:
     - navigation.path # this should give breadcrumbs but isn't
     # - toc.integrate # this takes the ToC from the right and puts it into one structure on the left, not compatible with the following - navigation.indexes
     - navigation.indexes
-    - navigation.footer
+    # - navigation.footer
     - toc.follow
     - navigation.top
     - search.suggest
     - search.highlight
-    - content.tabs.link
+    - content.tabs.link # if Mac is selected the preferred option on one box, all boxes switch to Mac
     - content.code.annotation
     - content.code.copy
   language: en

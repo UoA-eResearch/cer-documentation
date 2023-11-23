@@ -225,7 +225,7 @@ An efficient way of finding fonts in the correct syntax is to use [this website]
 
 
 :fontawesome-brands-youtube:{ style="color: #EE0F0F" }
-__[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
+(__[How to set up Material for MkDocs]__ by @james-willett)[https://youtu.be/Q-YA_dA8C20?si=Zss-tTEUY2fdGkxI] – :octicons-clock-24:
 15m – Learn how to create and host a documentation site using Material for
 MkDocs on GitHub Pages in a step-by-step guide.
 

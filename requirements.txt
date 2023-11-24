@@ -1,4 +1,4 @@
-mkdocs-material
+mkdocs-material==9.4.11
 mkdocs-mermaid2-plugin
 mkdocs-macros-plugin
 pillow 

@@ -48,6 +48,11 @@ theme:
 plugins:
   - social
   - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src]
   - mermaid2
   # - projects
   - codelab:

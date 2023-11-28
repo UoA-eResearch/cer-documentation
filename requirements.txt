@@ -12,3 +12,4 @@ mkdocs-git-revision-date-plugin
 lxml
 cssselect
 ./codelab_processor
+mkdocstrings-python

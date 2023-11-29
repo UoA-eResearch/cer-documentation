@@ -59,6 +59,7 @@ plugins:
       default_handler: python
       handlers:
         python:
+          paths: [mytardis_ingestion]
           options:
             show_submodules: true
             show_root_heading: true

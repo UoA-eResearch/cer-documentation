@@ -13,4 +13,4 @@ lxml
 cssselect
 ./codelab_processor
 mkdocstrings-python
-git+https://github.com/UoA-eResearch/mytardis_ingestion
+

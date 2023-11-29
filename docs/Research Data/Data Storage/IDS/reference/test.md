@@ -1,2 +1,2 @@
 # Workflow module
-::: beneficiations.beneficiation
+::: src

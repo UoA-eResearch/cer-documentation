@@ -17,12 +17,12 @@ In Site Manager dialog of FileZilla, create a new site and fill in the following
 - **User**: Your username
 - **Password**: leave it blank
 
-![useful image](/docs/assets/filezilla.png){:width="600px"}
+![useful image](/cer-documentation/assets/filezilla.png){:width="600px"}
 
 
 After clicking **Connect** button, enter password dialog will popup. In this dialog, uncheck the **Remember password until FileZilla is closed** checkbox, and enter the same password as [SSH login](./ssh-client.md).
 
-![useful image](./assets/doc/copy-file-linux/filezilla2.png){:width="300px"}
+![useful image](/cer-documentation/assets/filezilla2.png){:width="300px"}
 
 ## Copy files with SCP
 

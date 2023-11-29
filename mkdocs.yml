@@ -148,3 +148,5 @@ extra:
 copyright: |
   &copy; 2023 <a href="https://eresearch.auckland.ac.nz/"  target="_blank" rel="noopener">UoA CeR</a>
 
+validation:
+  absolute_links: ignore

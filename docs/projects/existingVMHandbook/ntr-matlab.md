@@ -18,7 +18,7 @@ We offer two images with Matlab pre-installed:
 
 To find these images, login to [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) via Tuakiri. Browse to *Project > Compute > Images* as shown in the picture below, and enter `Matlab` in the search box. If there are multiple images, please always choose the latest one, and click the "Launch" button to start the new instance wizard.
 
-![Fig1 Image](./assets/ntr-matlab/fig1-image.png){:width="60%"}
+![Fig1 Image](/cer-documentation/assets/fig1-image.png){:width="60%"}
 
 **Note**: You might also find some other community Matlab images, please don't use them and use those start with `UoA`. If you can not find these images, please contact us and we'll grant you access.
 

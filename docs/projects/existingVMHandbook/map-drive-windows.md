@@ -14,11 +14,11 @@ If you want to mount some other location, e.g. a faculty drive, you'll need to c
 
 2. Click the **Map network drive** button in the ribbon menu at the top, then select "Map network drive." (This is under the Computer tab, which should open automatically when you go to This PC, as above.)
 
-    ![useful image](assets/map-screenshot1.png){:width="600px"}
+    ![useful image](/cer-documentation/assets/map-screenshot1.png){:width="600px"}
 
 3. Select the drive letter you want to use for the network folder, then enter the path `\\files.auckland.ac.nz\myhome\`. Make sure the path exists.
 
-    ![useful image](assets/map-screenshot2.png){:width="600px"}
+    ![useful image](/cer-documentation/assets/map-screenshot2.png){:width="600px"}
 
 4. Confirm your selection and click **Finish**. You can choose to reconnect to the folder every time you sign in so it's always available to you and, if needed, use a different user account to connect to the folder.
 

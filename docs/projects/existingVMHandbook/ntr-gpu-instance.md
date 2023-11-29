@@ -14,11 +14,11 @@ Before you can launch a GPU instance, you must reserve a GPU first. Login to thi
 
 , and you'll see the current availability of all GPUs.
 
-![useful image](./assets/doc/ntr-gpu-instance/reservation.png){:width="60%"}
+![useful image](/cer-documentation/assets/reservation.png){:width="60%"}
 
 Follow the instructions to reserve your GPU instance. If your reservation is successful, you'll receive an email, like this one:  
 
-![useful image](./assets/doc/ntr-gpu-instance/email.png){:width="60%"}
+![useful image](/cer-documentation/assets/email.png){:width="60%"}
 
 You can follow the link inside the email to read the instructions on how to launch a GPU instance. 
 
@@ -26,7 +26,7 @@ You can follow the link inside the email to read the instructions on how to laun
 
 We your reservation is approaching to the end date (normally 2 weeks before), you'll receive another email asking you to renew. You can follow the instructions to renew your reservation, if nobody has reserved your GPU. You won't be able to see the renew button until you receive the email. That is, you can not renew your reservation in advance.
 
-![useful image](./assets/doc/ntr-gpu-instance/email2.png){:width="60%"}
+![useful image](/cer-documentation/assets/email2.png){:width="60%"}
 
 
 ## GPU reservation v.s. Nectar allocation

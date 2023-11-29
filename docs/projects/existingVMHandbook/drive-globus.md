@@ -35,7 +35,7 @@ in globus:
 1.  Select the Activity tab on the LHS of the globus
 page and then select the job that you want to investigate. 
 
-![](./assets/doc/drive-globus/globus_activity.png) 
+![](/cer-documentation/assets/globus_activity.png) 
  
 
 
@@ -44,7 +44,7 @@ page and then select the job that you want to investigate.
 to see the problem with your transfer here.  If this raises issues you
 can't control, please get in touch with Centre for eResearch. 
 
-![](./assets/doc/drive-globus/globus_error_logs.png){:width="900px"}
+![](/cer-documentation/assets/globus_error_logs.png){:width="900px"}
 
    
 
@@ -64,7 +64,7 @@ by
 
 | endpoint overview             |  deactivate              | reactivate                         |
 :------------------------------:|:------------------------:|:-----------------------------------:
-![](./assets/doc/drive-globus/endpoint_details.png)  |  ![](./assets/doc/drive-globus/endpoint_deactivate.png)  |  ![](./assets/doc/drive-globus/endpoint_reactivate.png)  |  
+![](/cer-documentation/assets/endpoint_reactivate.png)  |  
 
 Now your files should be visible.
 

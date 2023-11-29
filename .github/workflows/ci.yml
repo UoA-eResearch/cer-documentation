@@ -18,6 +18,7 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
+      - run: apt-get install libxml2-dev libxslt1-dev python-dev
       - run: pip install -r requirements.txt
-      - run: git clone https://github.com/UoA-eResearch/mytardis_ingestion
+
       - run: mkdocs gh-deploy --force

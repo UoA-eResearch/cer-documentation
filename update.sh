@@ -3,13 +3,18 @@
 # and insert it into `codelab/base.html`
 
 cwd=$(pwd)
+
 loc=$(pip show mkdocs-material | grep -Po '(?<=Location: )(.*)' )
+echo $loc
 v=$( pip show mkdocs-material | grep -Po '(?<=Version: )(\S*)')
+echo $v
 dir="$loc/mkdocs_material-$v.dist-info/RECORD"
+echo $dir
 CSS_BUNDLE=$( grep -Po '(?<=material/templates/)(.*main\..*\.min.css)(?=,)' $dir )
 PAL_BUNDLE=$( grep -Po '(?<=material/templates/)(.*palette\..*\.min.css)(?=,)' $dir )
 SW_BUNDLE=$( grep -Po '(?<=material/templates/)(.*search\..*\.min.js)(?=,)' $dir )
 JS_BUNDLE=$( grep -Po '(?<=material/templates/)(.*bundle\..*\.min.js)(?=,)' $dir )
+
 
 echo $CSS_BUNDLE
 echo $PAL_BUNDLE

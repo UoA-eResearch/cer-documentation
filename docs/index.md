@@ -1,6 +1,5 @@
 # Documentation Architecture
 
-add Codelab theory here
 
 ## The existing Documentation
 
@@ -61,7 +60,7 @@ LINK TO THE EXCEL SHEET
 ```mermaid
 flowchart TD
     A[Wesbite]
-    B[ResHub] -->|links to| F[gitHub-Docs]
+    B[ResHub] -->|links to| F[cer-documentation]
     C[Nuclino] -->|CONNECT accessible | X[Wiki]
     C -->|e.g. HR tuts.| D[MSTeams]
     E[VMHandbook] -->|filtered/upated| F  

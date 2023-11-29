@@ -13,7 +13,7 @@ Create a new remote desktop connection. Set the **Computer** as the VM's host na
 
 (Note, that the exact look may differ from what you see below if you are using a different version of the remote desktop connection than we used to create this manual)
 
-![useful image](./assets/doc/linux-rdp-client/screenshot1.png){:width="50%"}
+![useful image](assets/linuxscreenshot1.png){:width="50%"}
 
 Then, click **Connect** and enter your university password. If you have sudo privileges on the VM you need to use [2-factor authentication](./two-factor-authentication.md) for the Password field. Otherwise just type your University password.
 

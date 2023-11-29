@@ -30,12 +30,13 @@ To access local files from virtual machines, you need to configure the remote de
 
 On Windows, choose your **local resources** in the settings of your remote desktop connection window.  Notice below the **More** button at the bottom which takes you to the local devices and resources section which allows resources to be chosen.
 
-![useful image](./assets/doc/remote-desktop/screenshot3.png){:width="50%"}
+![useful image](assets/rdp-screenshot3.png){:width="50%"}
 
 On Mac, Add local resources follow the screen shot below:
 
-![useful image](./assets/doc/remote-desktop/screenshot4.png){:width="50%"}
+![useful image](assets/rdp-screenshot4.png){:width="50%"}
 
 On your virtual machine, open **Explorer**, you will see these redirected drives underneath your **Devices and drives** area. They will be designated by "drive letter" on "computername" where computername is your host.
 
-![useful image](./assets/doc/remote-desktop/screenshot5.png){:width="50%"}
+![useful image](assets/rdp-screenshot5.png){:width="50%"}
+

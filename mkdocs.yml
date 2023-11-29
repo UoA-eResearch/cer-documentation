@@ -1,10 +1,16 @@
 site_name: CeR Documentation
 site_url: https://uoa-eresearch.github.io/cer-documentation/
+repo_url: https://github.com/UoA-eResearch/cer-documentation
+repo_name: cer-documentation
+edit_uri: edit/main/docs/
+# use_directory_urls: false
 # NOT SURE ABOUT THESE
 site_dir: public
 theme: 
   name: material  
   logo: assets/UoALogoWhite.png
+  icon:
+    repo: fontawesome/brands/github
   favicon: assets/favicon.ico
   custom_dir: codelab
   include_search_page: false
@@ -16,7 +22,7 @@ theme:
     # - navigation.sections # show all the sections, don't collapse
     - navigation.tracking
     - navigation.top # the button showing up when user has scrolled down a lot
-    - navigation.path # this should give breadcrumbs but isn't
+    # - navigation.path # breadcrumbs are only for sponsors
     # - toc.integrate # this takes the ToC from the right and puts it into one structure on the left, not compatible with the following - navigation.indexes
     - navigation.indexes
     # - navigation.footer
@@ -27,6 +33,7 @@ theme:
     - content.tabs.link # if Mac is selected the preferred option on one box, all boxes switch to Mac
     - content.code.annotation
     - content.code.copy
+    - content.action.edit # this toggles the edit button on the top right
   language: en
   palette:
     - scheme: default

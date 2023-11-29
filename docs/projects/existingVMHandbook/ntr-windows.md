@@ -18,13 +18,13 @@ If you prefer video tutorials, you can refer to [Nectar On-board Tutorial Videos
 
 Login to [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) via Tuakiri. Browse to *Project > Compute > Images* as shown in the picture below, and enter `UoA-Server` in the search box. You will find the prebuilt images for Windows instances.
 
-![useful image](./assets/doc/ntr-windows/step1-image.png){:width="60%"}
+![useful image](assets/ntr-win-step1-image.png){:width="60%"}
 
 If there are multiple images, please always choose the latest one, and click the "Launch" button to start the new instance wizard.
 
 In the *Details* tab, please select `auckland` from the *Availability Zone* dropdown box.
 
-![useful image](./assets/doc/ntr-windows/step2-az.png){:width="60%"}
+![useful image](assets/ntr-win-step2-az.png){:width="60%"}
 
 In the *Security Groups* tab, please make sure you've enabled Remote Desktop Protocol (RDP, port 3389) ingress. 
 

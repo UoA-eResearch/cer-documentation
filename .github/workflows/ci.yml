@@ -18,7 +18,8 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: sudo apt-get install python3-lxml
+      - run: sudo apt-get install libxml2-dev libxslt1-dev
+      - run: pip install lxml
       - run: pip install -r requirements.txt
 
       - run: mkdocs gh-deploy --force

@@ -18,3 +18,11 @@
     border-radius: .1rem;
     content: "/";
   }
+  
+ul.md-source__facts {
+  display: none;
+}
+
+label.md-nav__title {
+  display: none;
+}

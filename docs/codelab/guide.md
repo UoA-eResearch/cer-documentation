@@ -1,9 +1,9 @@
 ---
 codelab: true
 author: "Anonymous Penguin"
-title: Setup and Usage
+title: Example Codelab
 description: |
-  This guide shows you how to configure the Codelab Theme.
+  This guide shows you what a Codelab os.
 tags:
   - example
   - beginner

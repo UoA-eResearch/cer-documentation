@@ -1,5 +1,5 @@
 ---
-title:  "Nectar"
+title:  "VM - The Nectar Research Cloud"
 codelab: false
 ---
 

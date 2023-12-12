@@ -1,6 +1,6 @@
 :root {
     --md-primary-fg-color:        #00467F;
-    --md-primary-fg-color--light: ##009AC7;
+    --md-primary-fg-color--light: #009AC7;
     --md-primary-fg-color--dark:  #333333;
     /* --md-primary-bg-color:        #00467F; */
   }
@@ -26,3 +26,10 @@ ul.md-source__facts {
 label.md-nav__title {
   display: none;
 }
+
+/* li.md-nav__item--active:last-child {
+  border-left: solid 15px var(--md-accent-fg-color);
+  padding-left: 15px;
+} */
+/* this works partially, e.g. this one http://localhost:8005/cer-documentation/Research%20Compute/UoAResearchVM%20Farm/
+but not on that one http://localhost:8005/cer-documentation/projects/existingVMHandbook/acknowledgement/ */

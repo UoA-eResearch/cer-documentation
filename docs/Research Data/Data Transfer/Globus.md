@@ -5,28 +5,27 @@ title:  "Globus"
 
 # Globus
 
-We want to adapt the [efforts at Stanford](https://globus.stanford.edu/)
+Globus is a tool designed to facilitate file transfers. After some initial setup, you won't be required to log-in to a multitude of services, transfers happen fast and if the connection is interrupted, they are automatically resumed (within certain limits). 
 
-And [NeSI](https://support.nesi.org.nz/hc/en-gb/sections/360000040596-Data-Transfer-Services)
+There are two versions of Globus:
 
-## Clarify
+- the server-version: *Globus* that is also called the *Data Transfer Node (DTN)*, *Globus Server* or *Globus Endpoint*
+- a client-version that you can install on your physical computer (or VM) called *Globus Connect Personal*
 
-- There is the server-verion: *Globus* and the client-version: *Globus Connect Personal* (GCP) that can be installed on every device
-- Ususally, one side (or endpoint) has to be a server; in other words: Transfer GCP to GCP do not work
-  - there are exceptions, please get in touch
+Usually, one side (or endpoint) has to be a server; in other words: Transfer GCP to GCP do not work. There are exceptions, please get in touch.
 
-## How to speed the transfer up
+Globus is a web-based tool that allows you to upload and download data. It is also possible to use the command line to transfer data, but this is more complicated.
 
-- use a wired connection on Campus, not WiFI
-- Make use of 10GBit connection?
 
-## How to get Data to someone
 
-## How to get Data from someone
+!!! info
+    - We want to adapt the [efforts at Stanford](https://globus.stanford.edu/)
+    - especially https://globus.stanford.edu/scenarios.html
+    - And [NeSI](https://support.nesi.org.nz/hc/en-gb/sections/360000040596-Data-Transfer-Services)
 
-## How to reactivating the endpoint
-- might have to go to Youtube because can't be shared from GDrive
-- Panopto won't work either, because one has to log in to Canvas
-- https://streamable.com/ is mentioned as a common alternative
-- not sure if Dropbox would work
-<iframe src="https://drive.google.com/file/d/1Xb3o7PDF8VIIfwvSRv9eSu1hFvuC61dX/view?usp=drive_link" allowfullscreen></iframe>
+
+
+
+
+
+

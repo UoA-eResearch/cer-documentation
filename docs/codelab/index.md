@@ -3,6 +3,10 @@ hide:
   - toc
 ---
 
+# What is this
+
+A Google Codelab is a multi-step tutorial creation system.
+
 # Challenges
 
 - Confronting a *learner* (or any person seeking help) with one **wall of text** is likely to be confronting.

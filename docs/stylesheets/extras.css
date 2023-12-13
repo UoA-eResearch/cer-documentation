@@ -27,9 +27,9 @@ label.md-nav__title {
   display: none;
 }
 
-/* li.md-nav__item--active:last-child {
+.md-nav__item .md-nav__link--active, .md-nav__item .md-nav__link--active code {
   border-left: solid 15px var(--md-accent-fg-color);
   padding-left: 15px;
-} */
+}
 /* this works partially, e.g. this one http://localhost:8005/cer-documentation/Research%20Compute/UoAResearchVM%20Farm/
 but not on that one http://localhost:8005/cer-documentation/projects/existingVMHandbook/acknowledgement/ */

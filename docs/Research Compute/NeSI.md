@@ -23,8 +23,5 @@ There is a job scheduling system ([SLURM](https://support.nesi.org.nz/hc/en-gb/a
 
 Commonly, researchers need to upload data to the HPC system and download results from it.
 A Research Drive (link) is often the easiest way to do this.
-As NeSI is outside the {{ instutition-name }} firewall, you will need to use a piece of software called Globus for this. More information can be found here LINK 
+As NeSI is outside the {{ instutition_name }} firewall, you will need to use a piece of software called Globus for this. More information can be found here LINK 
 You can use the [NeSI Data Transfer Platform](https://support.nesi.org.nz/hc/en-gb/articles/360000691696-Transferring-data-to-and-from-NeSI) to transfer data to and from NeSI. This is a web-based tool that allows you to upload and download data. It is also possible to use the command line to transfer data, but this is more complicated.
-
-*[NeSI]: National eScience Infrastructure
-*[HPC]: High Performance Computing

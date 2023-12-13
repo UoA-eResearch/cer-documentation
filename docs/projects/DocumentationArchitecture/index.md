@@ -283,8 +283,8 @@ the definition of the variables go in the `mkdocs.yml` file
       -   `#only-light)`
       -   see example below
 
-![Image title](./assets/IDS-Wizard-Light.jpg#only-light){ width=50% loading=lazy}
-![Image title](./assets/IDS-Wizard-Dark.jpg#only-dark){ width=50% loading=lazy}
+![Image title](/cer-documentation/assets/IDS-Wizard-Light.jpg#only-light){ width=50% loading=lazy}
+![Image title](/cer-documentation/assets/IDS-Wizard-Dark.jpg#only-dark){ width=50% loading=lazy}
 <!-- loading=lazy align=right  -->
 
 - If we feel the need for a slide-show, we can have a look at [glightbox](https://github.com/blueswen/mkdocs-glightbox#usage)

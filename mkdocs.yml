@@ -76,7 +76,7 @@ plugins:
       # delimiter: 'h2' # default 'h2' which corresponds to Markdown H2 (##)
       # auto_number: false # Whether to auto-number sections
 
-  - git-revision-date
+# - git-revision-date
   - minify:
       minify_html: true
       htmlmin_opts:

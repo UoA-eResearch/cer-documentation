@@ -336,8 +336,7 @@ In the Instrument Data Wizard, you can define which users or groups of users hav
 Users must have an account created in {{ service_name }} in order to access the data.
 
 !!! example "Adding Restrictions on your own data"
-
-Think about who needs to be able to access your data. What kind of access should they have? If there's a subset of the data that should be accessible to more or fewer people, how should they be organised?
+        Think about who needs to be able to access your data. What kind of access should they have? If there's a subset of the data that should be accessible to more or fewer people, how should they be organised?
 
 ## Save the ingestion file
 

@@ -5,7 +5,7 @@ pillow
 cairosvg
 
 # added by me to install the codelab processor
-jinja2==3.0.3
+jinja2==3.1.3
 mkdocs
 mkdocs-minify-plugin
 mkdocs-git-revision-date-plugin

@@ -1,4 +1,0 @@
-# crucible
-
-::: src.crucible
-

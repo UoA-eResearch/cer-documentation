@@ -1,4 +1,0 @@
-# miners
-
-::: src.miners
-

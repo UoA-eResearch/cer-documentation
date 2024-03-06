@@ -1,4 +1,0 @@
-# beneficiations
-
-::: src.beneficiations
-

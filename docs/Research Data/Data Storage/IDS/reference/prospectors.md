@@ -1,4 +1,0 @@
-# prospectors
-
-::: src.prospectors
-

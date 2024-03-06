@@ -1,4 +1,0 @@
-# overseers
-
-::: src.overseers
-

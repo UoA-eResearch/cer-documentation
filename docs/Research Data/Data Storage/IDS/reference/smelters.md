@@ -1,4 +1,0 @@
-# smelters
-
-::: src.smelters
-

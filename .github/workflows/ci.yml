@@ -20,7 +20,7 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
 
-      - run: git clone https://github.com/UoA-eResearch/mytardis_ingestion
+      # - run: git clone https://github.com/UoA-eResearch/mytardis_ingestion
       - run: pip install -r requirements.txt
 
       - run: mkdocs gh-deploy --force

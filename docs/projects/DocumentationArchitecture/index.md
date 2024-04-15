@@ -350,3 +350,13 @@ Install [this VSC Extension](https://github.com/telesoho/vscode-markdown-paste-i
 
 ## Capturing one window on MacOS
 After pressing ++cmd+ctrl+shift+4++, press ++space++ and then left-click on the window you want to capture. This will automatically just take a screen shot of the active window which is indicated by the :material-camera: icon. As per the default, this also includes a drop shadow. You can also remove this shadow by pressing ++option++ after you pressed ++space++ but before left-clicking. 
+
+
+
+```mermaid
+ graph LR
+      A["$$x^2$$"] -->|"$$\sqrt{x+3}$$"| B("$$\frac{1}{2}$$")
+      A -->|"$$\overbrace{a+b+c}^{\text{note}}$$"| C("$$\pi r^2$$")
+      B --> D("$$x = \begin{cases} a &\text{if } b \\ c &\text{if } d \end{cases}$$")
+      C --> E("$$x(t)=c_1\begin{bmatrix}-\cos{t}+\sin{t}\\ 2\cos{t} \end{bmatrix}e^{2t}$$")
+```
